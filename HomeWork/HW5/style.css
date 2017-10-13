@@ -1,0 +1,56 @@
+body {
+	max-width: 900px;
+	margin: auto;
+	font-family: sans-serif;
+}
+
+div {
+	margin-bottom: 20px;
+}
+
+.red {
+	font-size: 16px;
+	font-weight: bolder; 
+	text-decoration: underline;
+	color: #ff0000;
+}
+
+.black {
+ 	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.blue {
+	color: #0000ff;
+}
+
+.big {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.line_through {
+	text-decoration: line-through;
+}
+
+.green {
+	font-size: 10px;
+	line-height: 1.5;
+	text-align: justify;
+	color: #00804d;
+}
+
+img {
+	width: 600px;
+	margin-bottom: 20px;
+}
+
+p {
+	text-align: center;
+}
+		

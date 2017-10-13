@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charsete="utf-8">
+	<title>Task</title>
+	<script type="text/javascript">
+/*
+4.1. Работа со строками:
+Объявите 3 переменные;
+2 из них определите со строковыми значениями;
+Результат конкатенации двух предыдущих, через пробел, присвойте в третью переменную;
+Результат (третью переменную) выведите в консоль. */
+
+var a, b, c;
+a = '11';
+b = '10';
+c = a + b;
+console.log (c);
+
+/*
+4.2. Работа с числами:
+Объявите 2 переменные и присвойте им числовые значения;
+Выведите в консоль результат их:
+сложения;
+вычитания (оба варианта);
+умножения;
+деления (оба варианта);
+остаток от деления (оба варианта);
+побитового сдвига влево и вправо (всего 4 варианта); */
+
+var a, b;
+a = 28;
+b = 5;
+console.log ( a + b );
+console.log ( a - b );
+console.log ( b - a );
+console.log ( a * b );
+console.log ( a / b );
+console.log ( b / a );
+console.log ( a % b );
+console.log ( b % a );
+console.log ( a >> 2 );
+console.log ( b >> 2 );
+console.log ( a << 2 );
+console.log ( b << 2 );
+
+/*
+4.3. Работа с булевым типом:
+Приведите примеры использования операторов, которые вернут значение true или false.
+Выведите в консоль каждый из них, с указанием в комментарии, какой будет результат.
+Например:
+console.log(10 >= 20);  // true
+console.log('abc' < 'ABC');  // false */
+
+console.log ('800080' >= '128,0,128'); // true (color purple hex & rgb)
+console.log ('(-4) ** 2' < '(-(4 ** 2)'); // false (16 > (-16))
+
+/*
+  4.4. Работа со встроенными функциями confirm и prompt (*):
+
+Создать 2 переменные;
+В первую присвоить результат выполнения функции confirm('True or false?');
+Во вторую присвоить результат выполнения функции prompt('String or null?');
+Выведите в консоль тип данных каждый из них, с указанием в комментарии, какой будет результат (если нажать 'OK' и если нажать 'Cancel'). */
+
+var alien = confirm ('Are you from Earth?');
+alert (alien); // OK - true; Cancel- false
+
+var planet = prompt ('Where are you from?', 'Earth');
+alert ('I am from ' + planet); // OK - returns String; Cancel - returns null
+	</script>
+</head>
+<body>
+<!--10.10.17 Anna Golovenko-->
+</body>
+</html>
