@@ -1,0 +1,12 @@
+
+body {
+	background: url("../img/pattern.png") repeat;
+}
+
+.block {
+	width: 320px;
+	height: 220px;
+	margin: 200px auto; 
+	background-position: center;
+	background-color: #A9A9A9;
+}

@@ -1,0 +1,22 @@
+.grey {
+	width: 520px;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #D3D3D3; 	
+}
+
+p {
+	font-size: 18px;
+	text-align: right;
+}
+
+p.header {
+	font-family: 'Times New Roman', serif;
+	text-transform: uppercase;
+	color: #800000;
+}
+
+p.description {
+	color: #383838;
+	font-family: Arial, sans-serif;
+}

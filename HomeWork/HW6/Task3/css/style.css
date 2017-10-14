@@ -1,0 +1,30 @@
+.container {
+	width: 450px;
+	margin: 0 auto;
+}
+
+.orange {
+	color: #FFF;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	background-color: #ff8000;
+	padding: 10px 20px;
+}
+
+.black {
+	background-color: #000;
+	padding: 10px 20px;
+	color: #FFF;
+}
+
+.selector {
+	color: #cc9900;
+}
+
+.property {
+	color: #ac39ac;
+}
+
+.value {
+	color: #cc3300;
+}
