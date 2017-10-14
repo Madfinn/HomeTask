@@ -1,24 +1,24 @@
 body {
-	max-width: 900px;
-	margin: auto;
 	font-family: sans-serif;
 }
 
-div {
-	margin-bottom: 20px;
-}
-
 .red {
-	font-size: 16px;
-	font-weight: bolder; 
+	font-size: 20px; 
 	text-decoration: underline;
 	color: #ff0000;
 }
 
 .black {
- 	font-size: 12px;
+ 	font-size: 16px;
 	font-weight: bold;
-	letter-spacing: 2px;
+	letter-spacing: 1.9px;
+}
+
+p > span:second-child {
+	line-height: 8;
+	font-weight: bold; 
+	letter-spacing: 1.7px;
+	/* word-spacing: 5px; */
 }
 
 .italic {
@@ -27,6 +27,8 @@ div {
 
 .blue {
 	color: #0000ff;
+	font-weight: bolder;
+	
 }
 
 .big {
@@ -39,7 +41,7 @@ div {
 }
 
 .green {
-	font-size: 10px;
+	font-size: 12px;
 	line-height: 1.5;
 	text-align: justify;
 	color: #00804d;
@@ -50,7 +52,7 @@ img {
 	margin-bottom: 20px;
 }
 
-p {
+p:last-child {
 	text-align: center;
 }
 		
