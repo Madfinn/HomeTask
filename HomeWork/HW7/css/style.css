@@ -1,0 +1,43 @@
+.wrapper {
+	background-color: #404040;
+	width: auto;
+	padding: 40px 80px; 	
+}
+
+div[class^="icon"] {
+	width: 49px;
+	height: 49px;
+	margin-bottom: 20px;
+}
+
+.icon1_1 {
+	background: url(../img/sprite.png) 0 0;
+}
+
+.icon2_1 {
+	background: url(../img/sprite.png) -50px 0;
+}
+
+.icon3_1 {
+	background: url(../img/sprite.png) -101px 0;
+}
+
+.icon4_1 {
+	background: url(../img/sprite.png) -151px 0;
+}
+
+.icon1_2 {
+	background: url(../img/sprite.png) -1px 49px;
+}
+
+.icon2_2 {
+	background: url(../img/sprite.png) -51px 49px;
+}
+
+.icon3_2 {
+	background: url(../img/sprite.png) -101px 49px;
+}
+
+.icon4_2 {
+	background: url(../img/sprite.png) -151px 49px;
+}
