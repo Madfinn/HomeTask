@@ -14,30 +14,60 @@ div[class^="icon"] {
 	background: url(../img/sprite.png) 0 0;
 }
 
+.icon1_1:hover {
+	background: url(../img/sprite.png) -1px 49px;
+}
+
 .icon2_1 {
 	background: url(../img/sprite.png) -50px 0;
+}
+
+.icon2_1:hover {
+	background: url(../img/sprite.png) -51px 49px;
 }
 
 .icon3_1 {
 	background: url(../img/sprite.png) -101px 0;
 }
 
+.icon3_1:hover {
+	background: url(../img/sprite.png) -101px 49px;
+}
+
 .icon4_1 {
 	background: url(../img/sprite.png) -151px 0;
+}
+
+.icon4_1:hover {
+	background: url(../img/sprite.png) -151px 49px;
 }
 
 .icon1_2 {
 	background: url(../img/sprite.png) -1px 49px;
 }
 
+.icon1_2:hover {
+	background: url(../img/sprite.png) 0 0;
+}
+
 .icon2_2 {
 	background: url(../img/sprite.png) -51px 49px;
+}
+
+.icon2_2:hover {
+	background: url(../img/sprite.png) -50px 0;
 }
 
 .icon3_2 {
 	background: url(../img/sprite.png) -101px 49px;
 }
 
+.icon3_2:hover {
+	background: url(../img/sprite.png) -101px 0;
+}
 .icon4_2 {
 	background: url(../img/sprite.png) -151px 49px;
+}
+.icon4_2:hover {
+	background: url(../img/sprite.png) -151px 0;
 }

@@ -1,0 +1,41 @@
+.wrapper {
+	background: url(../img/pattern.png) repeat;
+	width: 664px;
+	height: 358px;
+}
+
+.content {
+	font: 48px Myriad Pro, serif;
+	text-transform: uppercase;
+	letter-spacing: 9px;
+	word-spacing: 18px;
+	padding: 100px 80px;
+}
+
+.content div {
+	float: left;
+}
+
+.x_letter {
+    width: 60px;
+    height: 60px;
+    margin: auto 11px;
+}
+
+.x_letter div {
+	width: 20px;
+	height: 20px;
+}
+
+.block_black {
+	background: #000;
+}
+
+.block_transp {
+	background: transparent;
+}
+
+
+
+
+

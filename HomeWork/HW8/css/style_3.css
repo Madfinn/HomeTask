@@ -1,0 +1,25 @@
+.square {
+	width: 235px;
+	height: 235px;
+	background: #e51875;
+	position: relative;
+}
+
+.circle {
+	width: 148px;
+	height: 148px;
+	border-radius: 74px;
+	background: #fab250;
+	position: absolute;
+	top: 43px;
+	left: 41px;
+}
+
+.plus {
+	font-size: 68px;
+	color: #fff;
+	font-weight: bold;
+	position: absolute;
+	top: 34px;
+	left: 55px;
+}

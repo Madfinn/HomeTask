@@ -1,0 +1,16 @@
+li {
+	list-style: none;
+	float: left;
+	padding: 10px 20px;
+	background: #00cccc;
+	border: 2px solid #ff5c33;
+	color: #fff;
+	font: 20px Tahoma, sans-serif;
+	margin-right: 10px;
+}
+
+li:hover {
+	border: 2px inset #00cccc;
+	background: #ff5c33;
+	border-radius: 3px;
+}

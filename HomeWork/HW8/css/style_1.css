@@ -1,0 +1,64 @@
+.container {
+	height: 60px;
+	background: #444;
+	margin: 50px auto;
+	margin-bottom: 0;
+	border-bottom: 3px solid #fff;
+}
+
+div[class|="block"] {
+	height: 60px;
+	width: 200px;
+	float: left;
+	font: 24px Tahoma, sans-serif;
+	color: #fff;
+	text-align: center;
+	line-height: 60px;
+}
+
+.block-1 {
+	background: #ff8400;
+	margin-left: 30px;
+}
+
+.block-1:hover {
+	border-bottom: 13px solid #ff8400;
+}
+
+.block-2 {
+	background: #e42b2b;
+}
+
+.block-2:hover {
+	border-bottom: 13px solid #e42b2b;
+}
+
+.block-3 {
+	background: #a800ff;
+}
+
+.block-3:hover {
+	border-bottom: 13px solid #a800ff;
+}
+
+.block-4 {
+	background: #49a7f3;
+}
+ 
+ .block-4:hover {
+	border-bottom: 13px solid #49a7f3;
+}
+
+.block-5 {
+	background: #41d05f; 
+}
+
+.block-5:hover {
+	border-bottom: 13px solid #41d05f;
+}
+
+.bottom {
+ height: 10px;
+ margin: 0 auto;
+ background: #ff8400;
+}
