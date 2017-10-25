@@ -1,11 +1,18 @@
-li {
+ul {
 	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	font: 20px Tahoma, sans-serif;
+}
+
+li {
 	float: left;
 	padding: 10px 20px;
 	background: #00cccc;
 	border: 2px solid #ff5c33;
-	color: #fff;
-	font: 20px Tahoma, sans-serif;
 	margin-right: 10px;
 }
 

@@ -57,6 +57,10 @@ div[class|="block"] {
 	border-bottom: 13px solid #41d05f;
 }
 
+div[class|="block"]:hover {
+	cursor: pointer;
+}
+
 .bottom {
  height: 10px;
  margin: 0 auto;
