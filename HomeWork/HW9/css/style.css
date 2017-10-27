@@ -1,0 +1,226 @@
+@font-face {
+		font-family: GothamProRegular;
+		src: local("GothamProRegular"),
+		url("../fonts/GothamProRegular/GothamProRegular.ttf");
+		font-style: normal;
+		font-weight: normal;
+}
+
+@font-face {
+		font-family: GothamProMedium;
+		src: local("GothamProMedium"),
+		url("../fonts/GothamProMedium/GothamProMedium.ttf");
+		font-style: normal;
+		font-weight: normal;
+}
+
+@font-face {
+		font-family: GothamProBlack;
+		src: local("GothamProBlack"),
+		url("../fonts/GothamProBlack/GothamProBlack.ttf");
+		font-style: normal;
+		font-weight: normal;
+}
+
+@font-face {
+		font-family: GothamProLight;
+		src: local("GothamProLight"),
+		url("../fonts/GothamProLight/GothamProLight.ttf");
+		font-style: normal;
+		font-weight: normal;
+}
+
+body {
+	background: #404040;
+}
+
+div {
+	box-sizing: border-box;
+} 
+
+.wrapper {
+	width: 940px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.wrapper>div {
+	height: 450px;
+	float: left;
+}
+
+.left {
+	width: 400px;
+	background: url(../img/red_bg.png) repeat-x;
+	position: relative;
+	padding-top: 90px;
+}
+
+.white_block {
+	width: 270px;
+	background: #fff;
+	border-radius: 6px;
+	position: absolute;
+	top: 90px;
+	left: 65px;
+}
+
+.white_block>div {
+	width: 270px;
+	text-align: center;
+}
+
+.ringbel  {
+	display: inline-block;
+	position: absolute;
+	top: -20px;
+	right: -9px;
+}
+
+.month {
+	font: 21px GothamProBlack;
+	color: #575b66;
+	margin-top: 22px;
+	letter-spacing: -1px;
+}
+
+.price {
+	font: 52px GothamProLight;
+	color: #a1b45a;
+	margin-top: 35px; 
+}
+
+.old_price {
+	font: 14px GothamProMedium;
+	color: #9a9da7;
+	margin: 6px auto 49px auto;
+}
+
+.yellow {
+	background: #fac746;
+	font: 16px/50px GothamProMedium;
+	color: #876c27;
+	letter-spacing: -1px;
+	margin: 10px -5px;
+	box-sizing: content-box;
+	border-right: 8px solid #fac746;
+	border-radius: 3px;  
+}
+
+.right {
+	width: 540px;
+	background: #fff;
+	padding: 55px 60px;
+	font-family: GothamProRegular;
+	color: #797c85;
+	position: relative;
+}
+ 
+.cross {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+
+.text_1 {
+	font: 15px/23px GothamProRegular;
+	word-spacing: 1px;
+}
+
+.bold {
+	font: 15px/24px GothamProMedium; 
+}
+
+.payment {
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #c2c4cc;
+	margin-right: 10px;	
+}
+
+.payment_wrapper>div {
+	float: left;
+	margin: 30px 25px 31px 0; 
+}
+
+.privat {
+	position: relative;
+	top: -2px;
+	right: -1px;
+	background: url(../img/sprite.png) -25px -3px;
+	width: 18px;
+	height: 18px;	
+}
+
+.privat:hover {
+	background: url(../img/sprite.png) -4px -3px;	
+}
+
+.visa {
+	position: relative;
+	top: 0;
+	right: 8px;
+	background: url(../img/sprite.png) -4px -42px;
+	width: 37px;
+	height: 14px;	
+}
+
+.visa:hover {
+	background: url(../img/sprite.png) -4px -26px;	
+}
+
+.master_card {
+	position: relative;
+	top: -7px;
+	right: 17px;
+	background: url(../img/sprite.png) -50px -78px;
+	width: 43px;
+	height: 26px;	
+}
+
+.master_card:hover {
+	background: url(../img/sprite.png) -50px -107px;
+}
+
+.buy_now {
+	width: 275px;
+	clear: both;
+	padding: 20px 49px;
+	background: #aac65a;
+	border-radius: 30px;
+}
+
+a {
+	text-align: center;
+	text-decoration: none;
+	word-spacing: -1px;	
+}
+
+.buy_now a { 
+	color: #fff;
+}
+
+.text_2 {
+	margin-top: 35px;
+	line-height: 24px;
+}
+
+.text_2 a {
+	color: #8fbee6;
+	text-decoration: underline;
+}
+
+.application a {
+	color: #8f7229;
+	font-size: 14px;
+}
+
+.application {
+	width: 200px;
+	padding: 15px 39px;
+	background: #fac746;
+	border-radius: 30px;
+}
+
+
