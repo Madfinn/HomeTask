@@ -1,33 +1,33 @@
 @font-face {
-		font-family: GothamProRegular;
-		src: local("GothamProRegular"),
-		url("../fonts/GothamProRegular/GothamProRegular.ttf");
-		font-style: normal;
-		font-weight: normal;
+	font-family: GothamProRegular;
+	src: local("GothamProRegular"),
+	url("../fonts/GothamProRegular/GothamProRegular.ttf");
+	font-style: normal;
+	font-weight: normal;
 }
 
 @font-face {
-		font-family: GothamProMedium;
-		src: local("GothamProMedium"),
-		url("../fonts/GothamProMedium/GothamProMedium.ttf");
-		font-style: normal;
-		font-weight: normal;
+	font-family: GothamProMedium;
+	src: local("GothamProMedium"),
+	url("../fonts/GothamProMedium/GothamProMedium.ttf");
+	font-style: normal;
+	font-weight: normal;
 }
 
 @font-face {
-		font-family: GothamProBlack;
-		src: local("GothamProBlack"),
-		url("../fonts/GothamProBlack/GothamProBlack.ttf");
-		font-style: normal;
-		font-weight: normal;
+	font-family: GothamProBlack;
+	src: local("GothamProBlack"),
+	url("../fonts/GothamProBlack/GothamProBlack.ttf");
+	font-style: normal;
+	font-weight: normal;
 }
 
 @font-face {
-		font-family: GothamProLight;
-		src: local("GothamProLight"),
-		url("../fonts/GothamProLight/GothamProLight.ttf");
-		font-style: normal;
-		font-weight: normal;
+	font-family: GothamProLight;
+	src: local("GothamProLight"),
+	url("../fonts/GothamProLight/GothamProLight.ttf");
+	font-style: normal;
+	font-weight: normal;
 }
 
 body {
@@ -51,15 +51,15 @@ div {
 }
 
 .left {
-	width: 400px;
 	background: url(../img/red_bg.png) repeat-x;
+	width: 400px;
 	position: relative;
 	padding-top: 90px;
-}
+} 
 
 .white_block {
-	width: 270px;
 	background: #fff;
+	width: 270px;
 	border-radius: 6px;
 	position: absolute;
 	top: 90px;
@@ -81,8 +81,8 @@ div {
 .month {
 	font: 21px GothamProBlack;
 	color: #575b66;
-	margin-top: 22px;
 	letter-spacing: -1px;
+	margin-top: 22px;
 }
 
 .price {
@@ -109,20 +109,20 @@ div {
 }
 
 .right {
-	width: 540px;
 	background: #fff;
-	padding: 55px 60px;
 	font-family: GothamProRegular;
 	color: #797c85;
+	width: 540px;
+	padding: 55px 60px;
 	position: relative;
 }
  
 .cross {
+	cursor: pointer;
 	position: absolute;
 	top: 20px;
 	right: 20px;
 }
-
 
 .text_1 {
 	font: 15px/23px GothamProRegular;
@@ -146,56 +146,60 @@ div {
 }
 
 .privat {
-	position: relative;
-	top: -2px;
-	right: -1px;
 	background: url(../img/sprite.png) -25px -3px;
 	width: 18px;
 	height: 18px;	
+	position: relative;
+	top: -2px;
+	right: -1px;
 }
 
 .privat:hover {
-	background: url(../img/sprite.png) -4px -3px;	
+	background: url(../img/sprite.png) -4px -3px;
+	cursor: pointer;	
 }
 
 .visa {
-	position: relative;
-	top: 0;
-	right: 8px;
 	background: url(../img/sprite.png) -4px -42px;
 	width: 37px;
 	height: 14px;	
+	position: relative;
+	top: 0;
+	right: 8px;
 }
 
 .visa:hover {
-	background: url(../img/sprite.png) -4px -26px;	
+	background: url(../img/sprite.png) -4px -26px;
+	cursor: pointer;	
 }
 
 .master_card {
-	position: relative;
-	top: -7px;
-	right: 17px;
 	background: url(../img/sprite.png) -50px -78px;
 	width: 43px;
 	height: 26px;	
+	position: relative;
+	top: -7px;
+	right: 17px;
 }
 
 .master_card:hover {
 	background: url(../img/sprite.png) -50px -107px;
+	cursor: pointer;
 }
 
 .buy_now {
+	background: #aac65a;
 	width: 275px;
 	clear: both;
 	padding: 20px 49px;
-	background: #aac65a;
 	border-radius: 30px;
 }
 
 a {
 	text-align: center;
-	text-decoration: none;
 	word-spacing: -1px;	
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .buy_now a { 
@@ -203,8 +207,8 @@ a {
 }
 
 .text_2 {
-	margin-top: 35px;
 	line-height: 24px;
+	margin-top: 35px;
 }
 
 .text_2 a {
@@ -218,9 +222,9 @@ a {
 }
 
 .application {
+	background: #fac746;
 	width: 200px;
 	padding: 15px 39px;
-	background: #fac746;
 	border-radius: 30px;
 }
 
