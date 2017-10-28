@@ -1,0 +1,272 @@
+
+div {
+	box-sizing: border-box;
+}
+
+h1, h2, p, li, div {
+	margin: 0 auto;
+}
+
+h2 {
+	font: 48px GothamProMedium;
+	text-align: center;
+}
+
+div[class|="section"] {
+	width: 100%;
+}
+
+
+/* Blue block */
+.section-first {
+	background: url(../img/bg.png) center center no-repeat;
+}
+
+.wrapper {
+	width: 1173px;
+}
+
+.wrapper div {
+	text-align: center;
+}
+
+/* Center content */
+.top-header {
+	padding-top: 100px;
+}
+
+.top-header h1 {
+	font: 60px GothamProBold;
+	color: #fff;
+}
+
+.top-header p {
+	font: 30px GothamProRegular;
+	color: #fff;
+}
+
+/* Right-side content */
+.bottom-header {
+	display: inline-block;
+	padding: 140px 115px 315px 600px;
+}
+
+.bottom-header p {
+	text-align: left;
+}
+
+.blue {
+	font: 42px GothamProMedium;
+	color: #b6f1ff;
+	padding-bottom: 70px;
+}
+
+.white {
+	font: 30px/40px GothamProRegular;
+	color: #fff;
+	padding-bottom: 75px;
+}
+
+/* Red button */
+.red-btn {
+	background: #ff1744;
+	width: 350px;
+	padding: 25px 30px;
+	margin: 0;
+	border-radius: 5px;
+	box-shadow:  inset 0 -3px 3px rgba(0,0,0,0.3);
+} 
+
+.red-btn a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font: 24px GothamProBlack;
+	color: #fff;
+}
+
+
+/* White block */
+.section-second {
+	background: #fff;
+}
+
+.ten-reasons {
+	margin: 70px auto;
+}
+
+ ul {
+ 	list-style: none;
+ 	display: initial;
+ }
+
+ ul>span {
+ 	text-align: center;
+ }
+
+ li {
+ 	float: left;
+ 	width: 220px;
+ 	padding: 36px;
+ }
+
+  ul:last-child {
+  	padding-right: 0;
+  }
+  
+  ul:first-child {
+  	padding-left: 0;
+  }
+
+ .bold-text {
+ 	font: 20px GothamProMedium;
+ } 
+
+ .text {
+ 	font: 20px GothamProLight;
+ }
+
+ div[class|="icon"] {
+	width: 80px;
+	height: 80px;
+ }
+
+ div[class|="row"] {
+	display: inline-block;
+ }
+
+.empty {
+	visibility: hidden;
+}
+
+ .row-third {
+ 	margin-bottom: 70px;
+ }
+
+ .icon-1_1 {
+	background: url(../img/sprite.png) 267px -7px;
+ }
+
+ .icon-1_2 {
+	background: url(../img/sprite.png) 360px -7px;
+ }
+
+.icon-1_3 {
+	background: url(../img/sprite.png) 185px -7px;
+ }
+
+ .icon-1_4 {
+	background: url(../img/sprite.png) -4px -7px;
+ }
+
+ .icon-2_1 {
+	background: url(../img/sprite.png) 186px -113px;
+ }
+
+ .icon-2_2 {
+	background: url(../img/sprite.png) 275px -113px;
+ }
+
+ .icon-2_3 {
+	background: url(../img/sprite.png) 359px -106px;
+ }
+
+ .icon-2_4 {
+	background: url(../img/sprite.png) -9px -109px;
+ }
+
+ .icon-3_1 {
+	background: url(../img/sprite.png) 102px -8px;
+ }
+
+ .icon-3_2 {
+	background: url(../img/sprite.png) 102px 90px;
+ }
+
+
+/* Grey block */
+.section-third {
+	background: #f5f5f5;
+}
+
+.soon {
+	padding-top: 75px;
+}
+
+.section-third h2+p {
+	text-align: center;
+	font: 24px GothamProLight;
+}
+
+/* .event div{
+	padding: 70px auto;
+} */
+
+
+.event {
+	border-bottom: 5px solid #cfd8dc;
+	overflow: hidden;
+}
+
+.event:last-child {
+	border-bottom: none;
+}
+
+img[alt^="event"] {
+	width: 383px;
+	height: 523px;
+}
+
+h3 {
+	font: 48px GothamProRegular;
+}
+
+.bigger {
+	font: 24px GothamProLight;
+	padding-bottom: 60px;
+}
+
+.smaller {
+	font: 18px GothamProLight;
+	padding-bottom: 45px;
+}
+
+div[class^="description"] {
+	width: 590px;
+	margin: 70px 0;
+}
+
+
+/* Image is on left side */ 
+.coverR, .descriptionR {
+	float: left;
+}
+
+.descriptionR>.header {
+	text-align: left;
+}
+
+.descriptionR>p {
+	text-align: left;
+}
+
+.coverR {
+	margin: 70px 100px;
+}
+
+
+/* Image is on right side */
+.coverL, .descriptionL {
+	float: left;
+}
+
+.descriptionL>.header {
+	text-align: right;
+}
+
+.descriptionL>p {
+	text-align: right;
+}
+
+.coverL {
+	margin: 70px 100px;
+}
