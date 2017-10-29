@@ -197,11 +197,6 @@ div[class|="section"] {
 	font: 24px GothamProLight;
 }
 
-/* .event div{
-	padding: 70px auto;
-} */
-
-
 .event {
 	border-bottom: 5px solid #cfd8dc;
 	overflow: hidden;
@@ -241,11 +236,7 @@ div[class^="description"] {
 	float: left;
 }
 
-.descriptionR>.header {
-	text-align: left;
-}
-
-.descriptionR>p {
+.descriptionR>.header, .descriptionR>p {
 	text-align: left;
 }
 
@@ -259,11 +250,7 @@ div[class^="description"] {
 	float: left;
 }
 
-.descriptionL>.header {
-	text-align: right;
-}
-
-.descriptionL>p {
+.descriptionL>.header, .descriptionL>p {
 	text-align: right;
 }
 
