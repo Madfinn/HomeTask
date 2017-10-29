@@ -1,0 +1,95 @@
+div, h1, input {
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.bg {
+	width: 100%;
+	background: radial-gradient(circle at 85% 100%, #afcd7d, #6ea37e, #e2dbc8);
+} 
+
+input, a {
+	font: 14px Helvetica;
+	color: #fff;
+}
+
+
+.wrapper {
+	width: 800px;
+	padding-top: 135px;
+	padding-bottom: 135px;
+	position: relative;
+}
+
+.badge {
+	width: 374px;
+	padding: 30px 45px;
+  	background-color: rgba(201, 213, 179,.3);
+  	border: 1px solid rgb(201, 213, 179);
+	border-radius: 5px; 
+	box-shadow: 0 3px 3px rgba(0,0,0,.2);
+}
+
+.band {
+	width: 50px;
+	height: 169px;
+	background: url(../img/Band.png) repeat-y;
+	border-left: 1px solid #dfdfdf;
+	border-right: 1px solid #dfdfdf;
+	position: absolute;
+	top: 0;
+	left: 47%;
+}
+
+.hole {
+	width: 85px;
+	height: 7px;
+	background-color: rgba(141,180,142,0.3);
+  	border: 1px solid rgb(201, 213, 179);
+	border-radius: 3px; 
+  	box-shadow: inset 0 0 7px 0 rgba(0, 0, 0,.28);
+}
+
+h1 {
+	padding-top: 40px;
+	padding-bottom: 40px; 
+	text-transform: uppercase;
+	text-align: center;
+	font: 18px Helvetica, sans-serif;
+	font-weight: bold;
+	color: #fff;
+}
+
+input {
+	display: block;
+	width: 280px;
+	padding: 10px;
+	padding-left: 40px;
+	margin-bottom: 15px;
+	border: 1px solid rgb(201, 213, 179);
+	border-radius: 3px; 
+  	box-shadow: inset 0 0 3px 0 rgba(0, 0, 0,.28);
+}
+
+
+.username {
+	background: url(../img/Person.png) 10px 6px no-repeat;	
+}
+
+.password {
+	background: url(../img/Lock.png) 10px 6px no-repeat;
+}
+
+a {
+	text-decoration: none;
+	text-align: center;
+}
+
+.sign-in {
+	padding: 10px 110px;
+	background-color: #91c46c;
+	border: 1px solid rgb(201, 213, 179);
+	border-radius: 3px; 
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0,.1);
+}
+
