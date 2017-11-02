@@ -30,20 +30,15 @@ alert("Factorial is equal to " + factorial);
 Последовательность Хэеса считается так: если ввели число 9, то проверяем его, если оно чётное, делим на 2, если нечетное, умножаем на 3 и прибавляем 1, и так до тех пор пока число не будет равно 1
 */
 
-var result;
-var maxPoint = 1;
-var count = 1;
+var maxPoint = 0;
+var count = 0;
 var num = prompt('Type the number, please','');
-
-  num % 2 == 0 ? result = num / 2 : result = num * 3 + 1;
-    console.log(result); 
-		
     
- while (result > 1) {
-	maxPoint = (maxPoint > result) ?  maxPoint : result;
- 	result = (result % 2 == 0) ? result / 2 : result * 3 + 1;
- 	count++;
-    console.log(result);
+ while (num > 1) {
+  maxPoint = (maxPoint > num) ?  maxPoint : num;
+  num = (num % 2 == 0) ? num / 2 : num * 3 + 1;
+  count++;
+  console.log(num + " ");
  }
  
 console.log("Max point is " + maxPoint);
