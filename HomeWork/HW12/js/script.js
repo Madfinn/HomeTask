@@ -4,20 +4,15 @@ var num = [];
 var odd = [];
 var even = [];
 var n = prompt('Enter the number, please','1');
-var size = +n +100;
-var j = 0;
-var k = 0;
+var size = Math.abs(+n) +100;
 
-for (var i = 0; i < size; i++) {
- num[i] = n++;
+for (var i = n; i < size; i++) {
+ num.push(i);
 
-  if (num[i] % 2 == 0) {
-   odd[j] = num[i];
-   j++;
+  if (i % 2 == 0) {
+ 	odd.push(i);
   } else {
-   even[k] = num[i];
-   k++;
-  }
+   even.push(i);  }
 }
 
 console.log('Array: ' + num);
@@ -44,11 +39,10 @@ var capital = {
   Brasilia: 'Brazil'
 };
 
-console.log('Minsk is the capital of ' + capital['Minsk']);
-console.log('Kiev is the capital of ' + capital['Kiev']);
-console.log('London is the capital of ' + capital['London']);
-console.log('Pyongyang is the capital of ' + capital['Pyongyang']);
-console.log('Brasilia is the capital of ' + capital['Brasilia']);
+
+ for (var key in capital) {
+  console.log(key + ' is the capital of ' + capital[key]);
+ }
 
 /*Напишите свою реализацию функции для перебора массивов forEach.
 Пример использования:
@@ -61,16 +55,14 @@ forEach(arr, console.log);
 
 var num = [1, 4, 3, 7, 5, 9];
 
- function sortOut(arr) {
-  var element;
+ function forEach(arr, someFunc) {
 
-   for (var index = 0; index < arr.length; index++) {
-    element = arr[index];
-    console.log(element + '[' + index + ']' + ' (' + arr.length + ') ' + '[' + arr + ']');
-   }
+  for (var index = 0; index < arr.length; index++) {
+  someFunc(arr[index], index, arr);
+  }  
  }
 
-sortOut(num);
+forEach(num, console.log);
 
 /*Напишите свою реализацию функции map, которая создаёт новый массив с результатом вызова указанной функции для каждого элемента массива.
 Пример использования:
@@ -82,10 +74,13 @@ console.log(sqrtArr);
 
 var num = [1, 4, 3, 7, 5, 9];
 
- function calcArray(digitArray, mathFunc) {
+ function map(digitArray, mathFunc) {
+  var resultArray = [];
+
    for (var index = 0; index < digitArray.length; index++) {
-   console.log('[' + mathFunc(digitArray [index] ) + ']');
+    resultArray.push(mathFunc(digitArray[index], index, digitArray));
    }
+  console.log(resultArray);
  }
 
-calcArray(num, Math.sqrt);
+map(num, Math.sqrt);
