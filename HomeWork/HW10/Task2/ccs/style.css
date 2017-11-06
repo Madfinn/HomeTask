@@ -8,7 +8,7 @@ div, h1, input {
 	background: radial-gradient(circle at 85% 100%, #afcd7d, #6ea37e, #e2dbc8);
 } 
 
-input, a {
+input {
 	font: 14px Helvetica;
 	color: #fff;
 }
@@ -17,7 +17,7 @@ input, a {
 .wrapper {
 	width: 800px;
 	padding-top: 135px;
-	padding-bottom: 135px;
+	padding-bottom: 235px;
 	position: relative;
 }
 
@@ -80,16 +80,12 @@ input {
 	background: url(../img/Lock.png) 10px 6px no-repeat;
 }
 
-a {
-	text-decoration: none;
-	text-align: center;
-}
-
 .sign-in {
 	padding: 10px 110px;
 	background-color: #91c46c;
 	border: 1px solid rgb(201, 213, 179);
 	border-radius: 3px; 
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0,.1);
+    cursor: pointer;
 }
 
