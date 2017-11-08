@@ -428,6 +428,7 @@ div[class|="tab"] {
 div[class|="tab"] {
 	margin-right: 100px;
 	padding-bottom: 30px;
+	width: 150px;
 }
 
 div[class|="tab"] a {
@@ -470,7 +471,7 @@ div[class|="img"] {
     background: #ff1744;
     position: absolute;
     bottom: -4px;
-    width: 140px;
+    width: 150px;
 }
 
 #active a{
