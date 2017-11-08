@@ -422,6 +422,7 @@ div[class|="tab"] {
 .variants {
 	padding: 0 63px;
 	border-bottom: 1px solid #cfd8dc;
+	position: relative;
 }
 
 div[class|="tab"] {
@@ -429,8 +430,11 @@ div[class|="tab"] {
 	padding-bottom: 30px;
 }
 
-div[class|="tab"] p {
+div[class|="tab"] a {
 	font: 18px GothamProLight;
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 div[class|="tab"]:last-child {
@@ -458,12 +462,18 @@ div[class|="img"] {
 	background: url(../img/sprite2.png) -5px -12px;
 }
 
-.active-tab{
-	border-bottom: 5px solid #ff1744;
- 	border-radius: 5px;
+.active-tab::before {
+    border-radius: 10px;
+    content: '';
+    display: block;
+    height: 6px;
+    background: #ff1744;
+    position: absolute;
+    bottom: -4px;
+    width: 140px;
 }
 
-#active {
+#active a{
  	font: 18px GothamProMedium;	
 }
 
