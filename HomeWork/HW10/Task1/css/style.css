@@ -30,6 +30,7 @@ div[class|="section"] {
 	text-align: center;
 }
 
+
 /* Center content */
 .top-header {
 	padding-top: 100px;
@@ -44,6 +45,7 @@ div[class|="section"] {
 	font: 30px GothamProRegular;
 	color: #fff;
 }
+
 
 /* Right-side content */
 .bottom-header {
@@ -66,6 +68,7 @@ div[class|="section"] {
 	color: #fff;
 	padding-bottom: 75px;
 }
+
 
 /* Red button */
 .red-btn {
@@ -94,16 +97,16 @@ div[class|="section"] {
 	margin: 70px auto;
 }
 
- ul {
+ .section-second ul {
  	list-style: none;
  	display: initial;
  }
 
- ul>span {
+ .section-second ul>span {
  	text-align: center;
  }
 
- li {
+ .section-second li {
  	float: left;
  	width: 220px;
  	padding: 36px;
@@ -198,7 +201,7 @@ div[class|="section"] {
 }
 
 .event {
-	border-bottom: 5px solid #cfd8dc;
+	border-bottom: 1px solid #cfd8dc;
 	overflow: hidden;
 }
 
@@ -257,3 +260,282 @@ div[class^="description"] {
 .coverL {
 	margin: 70px 100px;
 }
+
+
+/* Block fourth (white) */
+.section-fourth {
+	background: #fff;
+}
+
+.section-fourth div {
+	padding-top: 80px;
+	padding-bottom: 80px;	
+}
+
+.red-arrow {
+	font: 36px GothamProMedium;
+	color: #fff;
+	background: #ff1744;
+	border-radius: 7px;
+	padding: 15px 38px;
+	position: relative;
+}
+
+.triangle {
+	position: absolute;
+	bottom: -30px;
+	left: 62px;
+	border: 20px solid transparent;
+	border-top: 20px solid #ff1744;
+}
+
+.block-right .triangle{
+	left: 68px;
+} 
+
+.block-left, .block-right {
+	width: 586px;
+	float: left;
+}
+
+.bold-text {
+	font: 20px GothamProMedium;
+	padding-top: 53px;
+	padding-bottom: 38px;
+}
+
+.normal-text {
+	font: 18px GothamProLight;
+	margin-bottom: 20px;
+}
+
+.block-center a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font: 18px GothamProBold;
+	color: #ff1744;
+	border: 3px solid #ff1744;
+	border-radius: 5px;
+	padding: 20px 30px;
+}
+
+
+/* Block five (grey) */
+.section-fifth {
+	background: #fafafa;
+	position: relative;
+}
+
+.baloon {
+	position: absolute;
+	top: -100px;
+	left: 105px;
+}
+
+.section-fifth .header-description {
+	font: 24px GothamProLight;
+	text-align: center;
+}
+
+.present {
+	position: absolute;
+	top: 80px;
+	right: 135px;
+	font: 18px GothamProMedium;
+	color: #fff;
+	background: #ff1744;
+	padding: 13px 18px;
+	border-radius: 5px; 
+}
+
+.present::before {
+	content: '';
+	border: 20px solid transparent;
+	border-right: 20px solid #ff1744;
+	position: absolute;
+	top: 3px;
+	left: -27px;
+}
+
+.section-fifth .description {
+	font: 18px GothamProLight;
+	text-align: center;
+}
+
+.section-fifth .wrapper {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	position: relative;
+}
+
+.miracles {
+	display: block;
+	margin: 80px auto;
+}
+
+.bottom-text p {
+	padding-bottom: 45px; 
+ 	font: 24px GothamProMedium; 
+}
+
+.bottom-text p:last-child {
+	padding-bottom: 0;  
+}
+
+
+/* Block six (white) */
+.section-sixth {
+	background: #fff;
+}
+
+.section-sixth h2 {
+	padding-bottom: 80px;
+}
+
+.section-sixth .wrapper {
+	padding-top: 80px;
+	padding-bottom: 80px;	
+	border-bottom: 1px solid #cfd8dc;
+}
+
+iframe {
+	display: block;
+	margin: 0 auto;
+}
+
+
+/* Block seven (white) */
+.section-seventh {
+	background: #fff;
+}
+
+.section-seventh h2 {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+div[class|="tab"] {
+	display: inline-block;
+	text-align: center;
+}
+
+.variants {
+	padding: 0 63px;
+	border-bottom: 1px solid #cfd8dc;
+}
+
+div[class|="tab"] {
+	margin-right: 100px;
+	padding-bottom: 30px;
+}
+
+div[class|="tab"] p {
+	font: 18px GothamProLight;
+}
+
+div[class|="tab"]:last-child {
+	margin-right: 0;
+}
+
+div[class|="img"] {
+	width: 110px;
+	height: 130px;
+}
+
+.img-1 {
+	background: url(../img/sprite2.png) -100px -5px;
+}
+
+.img-2 {
+	background: url(../img/sprite2.png) -300px -22px;
+}
+
+.img-3 {
+	background: url(../img/sprite2.png) -190px -12px;
+}
+
+.img-4 {
+	background: url(../img/sprite2.png) -5px -12px;
+}
+
+.active-tab{
+	border-bottom: 5px solid #ff1744;
+ 	border-radius: 5px;
+}
+
+#active {
+ 	font: 18px GothamProMedium;	
+}
+
+
+/* Block eight (white) */
+.section-eighth>.wrapper>div {
+	padding: 80px 40px;
+}
+
+.picture {
+	height: 540px;
+	margin-top: 80px;
+	clear: left;
+}
+
+.event-header {
+	font: 48px GothamProRegular;
+	text-align: left;
+}
+
+.event-description li {
+	font: 18px GothamProLight;
+	color: #ff1744; 
+	list-style-type: disc;
+	text-align: left;
+	padding: 45px 25px;
+	padding-bottom: 0;
+}
+
+.event-description>li>span {
+	color: #000;
+}
+
+.picture, .txt {
+	width: 545px;
+	float: left;
+}
+
+.quick-start>.picture {
+	background: url(../img/quick_start.png) no-repeat 156px 0;
+}
+
+
+/* Full reset block (hidden) */
+.full-reset {
+	display: none;
+}
+
+.full-reset>.picture {
+	background: url(../img/brain.png) no-repeat 105px 0;
+}
+
+
+/* Family block (hidden) */
+.family-block {
+	display: none;
+}
+
+.family-block>.picture {
+	background: url(../img/family.png) no-repeat 90px 0;
+}
+
+
+/* All-included block (hidden) */
+.all-included {
+	display: none;
+}
+
+.all-included>.picture {
+	background: url(../img/all_included.png) no-repeat 40px 0;
+}	
+
+
+
+
