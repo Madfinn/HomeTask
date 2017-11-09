@@ -11,22 +11,26 @@ checkString(test);
 var outStr = prompt('Введите строку','abcenglishdef');
 var inStr = 'english';
  function checkSubString (str, subStr) {
-  var result = str.toLocaleLowerCase().indexOf(subStr) !== -1 ? true : false;
+  var result = str.toLocaleLowerCase().indexOf(subStr.toLocaleLowerCase()) !== -1 ? true : false;
    return result;
 }
 checkSubString(outStr, inStr);
 
 // Task 3
 function generateRange(min, max, step) {
- if (step > 0 && min < max) {
+ var digitArray = [];
+  if (step > 0 && min < max) {
 
-  for (var i = min; i <= max; i += step) {
-   console.log( [i] );
-  }
+   for (var i = min; i <= max; i += step) {
+    digitArray.push(i);
+   }
 
- } else
-  console.log('Wrong condition');
+  } else
+   console.log('Wrong condition');
+
+return digitArray;
 }
+
 generateRange(2, 12, 2);
 
 //Task 4
@@ -34,23 +38,27 @@ var str1 = ['abrtrt', 'fg', 'dhg', 'jfdhdfdfdf', 'aer', 'rdgdhcth'];
 var str2 = ['codewars', 'java', 'javascript'];
 var str3 = ['apple', 'cat', 'planet'];
  function cutIt(arr) {
-  console.log(arr);
+  var j = 0;
+  var cutsArr = [];
+  var length = arr.length;
   var shortestStr = arr[0].length;
-   for ( var i = 0; i < arr.length; i++) {
+
+   for (var i = 0; i < length; i++) {
     shortestStr = ( shortestStr < arr[i].length) ? shortestStr : arr[i].length;
-    //console.log(shortestStr);
    }
-   var i =0;
+
    do {
-    var result = arr[i].substr(0, shortestStr);
-    i++; 
-    console.log(result);
-   } while (i < arr.length);
+    cutsArr.push(arr[j].substr(0, shortestStr));
+    j++; 
+   } while (j < length);
+
+   return cutsArr;
  }
- 
-console.log('____START_____');
-cutIt(str1);
-console.log('____START_____');
-cutIt(str2);
-console.log('____START_____');
-cutIt(str3);
+
+console.log(str1);
+console.log(cutIt(str1));
+console.log(str2);
+console.log(cutIt(str2));
+console.log(str3); 
+console.log(cutIt(str3));
+
