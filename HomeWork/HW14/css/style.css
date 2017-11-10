@@ -86,7 +86,7 @@ a {
 
 /* Section one */
 .section-one {
-	background: url(../img/bg.png);
+	background: url(../img/bg.png) no-repeat center center;
 }
 
 /* Header */
@@ -97,11 +97,11 @@ a {
 
 .menu li {
 	display: inline-block;
-	padding-right: 31px;
+	padding-left: 31px;
 }
 
 .header-logo, .header-menu {
-	width: 585px;
+	width: 685px;
 	padding-top: 10px;
 	padding-left: 10px;
 }
@@ -118,13 +118,13 @@ a {
 .strawberry-logo {
 	position: absolute;
 	top: 10px;
-	left: -25px;
+	left: 0;
 }
 
 .berryshop-logo {
 	position: absolute;
 	top: 29px;
-	left: 28px;
+	left: 50px;
 }  
 
 /* White button */
