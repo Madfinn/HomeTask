@@ -547,6 +547,269 @@ div[class|="img"] {
 	background: url(../img/all_included.png) no-repeat 40px 0;
 }	
 
+/* Block nine (white) */
+.section-ninth {
+	background: #fff;
+}
 
+.section-ninth h3{
+	padding: 80px 0;
+	margin-top: 545px;
+	text-align: center;
+	font: 36px GothamProRegular;
+
+}
+
+.clearfix::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+.section-ninth h3+p {
+	font: 20px GothamProMedium;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.counter {
+	margin: 0 auto;
+	list-style: none;
+	padding-left: 450px;
+} 
+
+.counter li {
+	float: left;
+	width: 78px;
+	height: 78px;
+	background: #ff1744;
+	border-radius: 5px;
+	color: #fff;
+	font: 48px GothamProMedium;
+	padding: 12px 8px;
+	text-align: center;
+	box-sizing: border-box;
+	margin-right: 20px;
+} 
+
+.counter+div {
+	padding-top: 100px; 
+
+}
+
+.section-ninth span {
+	font: 18px GothamProLight;
+	padding-right: 20px;
+	padding-left: 20px; 
+}
+
+.reserve {
+	margin: 75px auto;
+}
+
+.reserve a {
+	text-transform: uppercase;
+    text-decoration: none;
+    font: 18px GothamProBold;
+    color: #ff1744;
+    border: 3px solid #ff1744;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+
+/* Block ten (grey) */
+.section-tenth {
+	background: #fafafa;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.section-tenth h2 {
+	font: 48px GothamProMedium;
+	text-align: center;
+	padding-bottom: 80px;
+}
+
+.section-tenth .payment_bold {
+	font: 20px GothamProMedium;
+}
+
+.section-tenth p {
+	font: 18px GothamProLight;]
+}
+
+.section-tenth p {
+	text-align: left;
+	width: 595px;
+	margin-bottom: 15px;
+}
+
+.section-tenth a {
+	text-decoration: none;
+	color: #ff1744;
+}
+
+.payment-1, .payment-2 {
+	position: relative;
+}
+
+.payment-1 {
+	padding-bottom: 50px;
+}
+
+div[class^="icon10"] {
+	width: 65px;
+	height: 65px;
+}
+
+.icon10_1 {
+	background: url(../img/sprite3.png) -15px -67px;
+	position: absolute;
+	top: -3px;
+	left: 190px;
+}
+
+.icon10_2 {
+	background: url(../img/sprite3.png) -15px -155px;
+	position: absolute;
+	top: 25px;
+	left: 190px;
+}
+
+
+/* Block eleven (white) */
+.section-eleventh {
+	background: #fff;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	border-bottom: 1px solid #bdbdbd;
+}
+
+.section-eleventh h2 {
+	padding-bottom: 80px;
+}
+
+.section-eleventh ul {
+	list-style: none;
+}
+
+.steps li {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	margin: 0 63px;	
+}
+
+.steps li:first-child, .steps-descr li:first-child {
+	margin-left: 0;
+}
+
+.steps li:last-child, .steps-descr li:last-child {
+	margin-right: 0;
+}
+
+.step-1 {
+	background: url(../img/sprite4.png) 0 0;
+}
+
+.right-arrow {
+	background: url(../img/right-arrow.png);
+}
+
+.step-2 {
+	background: url(../img/sprite4.png) 100px 0;
+}
+
+.step-3 {
+	background: url(../img/sprite4.png) 0 95px;
+}
+
+.step-4 {
+	background: url(../img/sprite4.png) 100px 95px;
+}
+
+.steps-descr a {
+	text-decoration: none;
+	color: #000;
+}
+
+.steps-descr a:active {
+	color: #ff1744;
+}
+
+.steps-descr span {
+	font: 18px GothamProLight;
+}
+
+.steps-descr .bold-descr {
+	font: 20px GothamProMedium;
+}
+ 
+ .steps-descr li {
+ 	display: inline-block;
+ 	margin: 0 80px;
+ }
+
+ .steps-descr li span {
+ 	display: block;
+ 	text-align: center;
+ }
+
+ .steps-descr {
+ 	padding-left: 0;
+ }
+
+ /* Block twelve (white) */
+ .section-twelfth {
+ 	background: #fff;
+ 	padding-top: 70px;
+ 	padding-bottom: 80px;
+ }
+
+ .section-twelfth h2 {
+ 	padding-bottom: 75px;
+ }
+
+ .section-twelfth p {
+ 	width: 736px;
+ }
+
+.section-twelfth .question {
+	font: 20px GothamProMedium;
+	padding-bottom: 45px;
+ 	padding-left: 95px;
+ 	position: relative;
+}
+
+.section-twelfth img{
+	position: absolute;
+	top: -6px;
+	left: 45px;
+}
+
+ .section-twelfth .answer {
+ 	font: 18px/1.5 GothamProLight;
+ 	padding-bottom: 75px;
+ }
+
+
+ /* Block thirteen */
+ .section-thitreenth {
+ 	padding-top: 74px;
+ 	padding-bottom: 75px;
+ 	background: #303f9f;
+ }
+
+ .section-thitreenth p {
+ 	color: #fff;
+ 	font: 18px/1.5 GothamProLight;
+ 	text-align: center;
+ }
+
+ .section-thitreenth p:first-child {
+ 	text-transform: uppercase;
+ }
+ /* The endddd */
 
 
