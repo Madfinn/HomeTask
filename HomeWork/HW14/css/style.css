@@ -74,6 +74,10 @@ a {
 	padding-bottom: 120px;
 }
 
+.block-element {
+	display: block;
+}
+
 .top-margin {
 	margin-top: 40px;
 }
@@ -93,6 +97,10 @@ a {
 .menu a {
 	font: 14px "Poppins-Regular";
 	color: #000;
+}
+
+.menu {
+	text-align: right;
 }
 
 .menu li {
