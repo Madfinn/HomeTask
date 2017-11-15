@@ -101,7 +101,8 @@ a {
 
 /* Section one */
 .section-one {
-	background: url(../img/bg_main4.png) no-repeat 74% 62%;
+	background: url(../img/bg_main.jpg) no-repeat center center;
+	background-size: cover;
 }
 
 .section-one .wrapper {
