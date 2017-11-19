@@ -20,20 +20,20 @@ function dateNow(date) {
 dateNow(userInput);
 
 //Task 2
-var monthArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 var i = +prompt("Type number from 1 to 12");
 var monthName;
 function monthNumber(userInput) {
-    var result = monthArray[userInput - 1];
-    return result;
-}
+    var monthArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-try {
-    if (i > 0 && i <= 12) {
-        monthName = monthNumber(i);
+    if (userInput > 0 && userInput <= 12) {
+        return monthArray[userInput - 1];
     } else {
         throw "Wrong range! Number must be from 1 to 12!";
     }
+}
+
+try {
+    monthName = monthNumber(i);
 } catch (err) {
     monthName = undefined;
     console.log("ERROR: " + err);
