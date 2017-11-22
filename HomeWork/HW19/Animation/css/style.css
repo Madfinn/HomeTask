@@ -1,0 +1,180 @@
+.screen-width {
+	width: 100%;
+	margin: 150px auto;
+	
+}
+
+/* Animation */
+#wrapper-animation {
+	position: relative;
+	margin: 350px auto 250px auto;
+}
+
+#wrapper-animation div {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 0;
+	left: 45%;
+}
+
+.yellow {
+	background: yellow;
+	z-index: 0;
+}
+
+.pink {
+	background: pink;
+	z-index: 1;
+}
+
+.topL {
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	transform-origin: top left;
+	animation: rotate 4s infinite ease-in-out;
+}
+
+.topR {
+	-webkit-transform-origin: top right;
+	-moz-transform-origin: top right;
+	-o-transform-origin: top right;
+	transform-origin: top right;
+	animation: rotate 4s infinite ease-in-out .2s;
+}
+
+.bottomL {
+	-webkit-transform-origin: bottom left;
+	-moz-transform-origin: bottom left;
+	-o-transform-origin: bottom left;
+	transform-origin: bottom left;
+	animation: rotate 4s infinite ease-in-out reverse;
+}
+
+.bottomR {
+	-webkit-transform-origin: bottom right;
+	-moz-transform-origin: bottom right;
+	-o-transform-origin: bottom right;
+	transform-origin: bottom right;
+	animation: rotate 4s infinite ease-in-out .2s reverse;
+}
+
+@keyframes rotate {
+	from {
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	to {
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+/* Button-1 */
+#wrapper-button-1 {
+	padding-top: 450px;
+}
+
+.button {
+	width: 500px;
+	height: 40px;
+	background: #A0A0A0;
+	font: 18px/40px Tahoma, sans-serif;
+	text-align: center;
+	color: #fff;
+	border: 3px solid #000;
+	margin: 0 auto;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.one-1 {	
+	-webkit-transition: all 2s linear .2s;
+	-moz-transition: all 2s linear .2s;
+	-o-transition: all 2s linear .2s;
+	transition: all 2s linear .2s;
+}
+
+.one-1:hover {
+	background: #ffff00;
+	color: #000;
+}
+
+/* Button-2 */
+.two-2 {
+	-webkit-transition: width 4s linear .2s;
+	-moz-transition: width 4s linear .2s;
+	-o-transition: width 4s linear .2s;
+	transition: width 4s linear .2s;
+}
+
+.two-2:hover {
+	width: 300px;
+}
+
+/* Button-3 */
+.three-3 {
+	-webkit-transition: opacity 3s ease .2s;
+	-moz-transition: opacity 3s ease .2s;
+	-o-transition: opacity 3s ease  .2s;
+	transition: opacity 3s ease  .2s;
+}
+
+.three-3:hover {
+	opacity: .2;
+}
+
+/* Button-4 */
+.four-4 {
+	-webkit-transition: all 2s;
+	-moz-transition: all 2s;
+	-o-transition: all 2s;
+	transition: all 2s;
+}
+
+.four-4:hover {
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+/* Button-5 */
+.five-5 {
+	-webkit-transition: all 2s ease-in;
+	-moz-transition: all 2s ease-in;
+	-o-transition: all 2s ease-in;
+	transition: all 2s ease-in;
+}
+
+.five-5:hover {
+	width: 1000px;
+	height: 80px;
+	font-size: 2rem; 
+	line-height: 80px;
+}
+
+/* Button-6 */
+#wrapper-button-6 {
+	-webkit-transition: all 2s linear;
+	-moz-transition: all 2s linear;
+	-o-transition: all 2s linear;
+	transition: all 2s linear;
+}
+
+#wrapper-button-6:hover {
+	padding-top: 50px;
+}
+
+
+
+
+
