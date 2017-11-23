@@ -4,7 +4,7 @@ html {
 	text-align: center;
 }
 
-div {
+div, img {
 	box-sizing: border-box;
 	margin: 0 auto;
 }
@@ -31,6 +31,10 @@ img {
 		font-size: 2rem;
 		color: #ff0000;
 	}
+
+	img {
+		width: 24%;
+	}
 } 
 
 /* Task2 */
@@ -40,6 +44,12 @@ img {
 		font-size: 1.6rem;
 		color: #33cc33;
 	}
+
+	img {
+		width: 30%;
+	}
+
+
 }
 
 /* Task3 */
@@ -49,6 +59,10 @@ img {
 		font-size: 1.4rem;
 		color: purple;
 	}
+
+	img {
+		width: 30%;
+	}
 }
 
 /* Task4 */
@@ -56,6 +70,10 @@ img {
 	#wrapper-four {
 		width: 750px;
 		font-size: 1.6rem;
+	}
+
+	img {
+		width: 45%;
 	}
 }
 
@@ -65,5 +83,9 @@ img {
 		width: viewport;
 		font-size: 1.4rem;
 		color: #ffff00;
+	}
+
+	img {
+		width: 95%;
 	}
 }
