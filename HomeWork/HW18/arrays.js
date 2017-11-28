@@ -46,40 +46,19 @@
   function removeFalse(array) {
 
     if (!isArray(array)) {
-        throw new Error('Error: Only Arrays allowed!');
+       throw new Error('Error: Only Arrays allowed!');
     }
     var cleanedArray = [];
     var i = 0;
     while (i < array.length) {
 
-        switch (array[i]) {
-        case null:
-            array.splice(i, 1);
-            break;
-        case 0:
-            array.splice(i, 1);
-            break;
-        case '':
-            array.splice(i, 1);
-            break;
-        case false:
-            array.splice(i, 1);
-            break;
-        case undefined:
-            array.splice(i, 1);
-            break;
-        case NaN:
-            array.splice(i, 1);
-            break;
-        }
-        cleanedArray.push(array[i]);
-        i++;
-
+      if (!!array[i])
+       cleanedArray.push(array[i]);
+       i++;
     }
 
     return cleanedArray;
   }
-
 
 
   exports.arrays = {
