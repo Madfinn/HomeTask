@@ -20,6 +20,7 @@
      var currentElement = array[index];
      var str=''; 
      var result = array.reduce(function(str, currentElement, index) {
+      currentElement = (currentElement === undefined || currentElement === null) ? '' : currentElement;
       return (index === 0) ? currentElement : str + separator + currentElement;
       }, ',');  
 
