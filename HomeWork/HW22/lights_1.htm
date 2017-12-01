@@ -57,7 +57,9 @@
            /*var lighterOne = document.getElementsByClassName('light')[0];
            lighterOne.style.backgroundColor = 'blue';*/
          
-            if (light.style.backgroundColor === 'blue') {
+            if (document.getElementsByClassName('light')[0].style.backgroundColor === 'blue' &&
+                document.getElementsByClassName('light')[1].style.backgroundColor === 'blue' &&
+                document.getElementsByClassName('light')[2].style.backgroundColor === 'blue') {
                 alert('Готово!');
             }
         }
