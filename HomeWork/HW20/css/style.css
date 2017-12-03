@@ -729,6 +729,7 @@ video {
 .journey-start a {
 	background-color: #fc5f45;
 	color: #fff;
+	display: inline-block;
 }
 
 .journey-start p {
