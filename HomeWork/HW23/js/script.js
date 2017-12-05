@@ -15,42 +15,7 @@ window.onload = function(){
 /*1. Реализовать поиск DOM элементов по любому валидному селектору (примеры). При нахождении всех элементов, выделить первый из найденных.
 Выделить нужно следующими стилями:
 outline: 3px solid red; background-color: lightblue;
-*/	/*var intros = document.querySelectorAll('.intro');
-	var zenDivs = document.querySelectorAll(' div[id^="zen"] ');
-	var pageWrapper = document.querySelector('.page-wrapper');
-	var roleAttr = document.querySelectorAll('div[role]');
-	var header = document.querySelector('header');
-	var h1 = document.querySelector('header h1');
-	var h2 = document.querySelector('header h2');
-	var summaryP = document.querySelectorAll('.summary p');
-	var h3 = document.querySelector('#zen-preamble h3');
-	var preambleP = document.querySelectorAll('#zen-preamble p');
-	var mainSupporting = document.querySelector('.page-wrapper div:first-child');
-	var mainSupportingDiv = document.querySelector('.supporting div:nth-child(2)');
-	var exceptDiv = document.querySelectorAll(':not(div)');
-	var aside = document.querySelector('.sidebar');
-	
-
-	
-		function selectElement(element) {
-			element.style.backgroundColor = 'lightblue';
-			element.style.outline = '3px solid red';
-		}
-		selectElement(intros[0]);
-		selectElement(zenDivs[0]);
-		selectElement(pageWrapper);
-		selectElement(roleAttr[1]);
-		selectElement(header);
-		selectElement(h1);
-		selectElement(h2);
-		selectElement(summaryP[0]);
-		selectElement(h3);
-		selectElement(preambleP[0]);
-		selectElement(mainSupporting);
-		selectElement(mainSupportingDiv);
-		selectElement(exceptDiv[0]);
-		selectElement(aside);*/
-
+*/	
 		var wrapper = document.querySelectorAll('.page-wrapper');
 		var ZenIdElements = document.querySelectorAll('[id^="zen"]');
 		var header = document.querySelectorAll('header');
