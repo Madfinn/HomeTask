@@ -418,6 +418,10 @@ video {
 	padding: 45px 25px 0 25px;
 }
 
+.bennet-socials a {
+	color: #000;
+}
+
 /* ****************Section coffee********************* */
 #coffee {
 	background-image: url(../img/coffee.png);
