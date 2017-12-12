@@ -578,6 +578,7 @@
 	
 	.wrapper {
 		width: 100%;
+		overflow-x: hidden;
 	}
 
 	h2 {
