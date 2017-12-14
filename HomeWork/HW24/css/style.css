@@ -1,0 +1,307 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+p {
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	width: 100%;
+}
+
+/************* Section one **************/
+
+#section-one {
+	background-image: url(../img/bg.png);
+	color: #fff;
+}
+
+.text-orange {
+	color: #fb6b43;
+}
+
+.logo {
+	font-size: 25px;
+}
+
+.logo a {
+	color: #fff;
+}
+
+.logo a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.logo a:visited {
+	text-decoration: none;
+	color: #fff;
+}
+
+.logo a:active {
+	text-decoration: none;
+	color: #fff;
+}
+
+header .row {
+	padding-top: 50px;
+} 
+
+nav .nav-bar {
+	font-size: 24px;
+	padding-left: 10px;
+}
+
+nav .nav-bar:hover {
+	cursor: pointer;
+}
+
+ #section-one h1{
+	font: 800 70px 'Open Sans', sans-serif;
+}
+
+#section-one .descr-main {
+	padding-left: 185px;
+	padding-right: 185px;
+	font: 400 25px 'Open Sans', sans-serif;
+}
+
+#section-one .btn-main {
+	text-transform: uppercase;
+	font: 600 16px 'Open Sans', sans-serif;
+	width: 210px;
+	color: #fff;
+	background-color: transparent;	
+}
+
+#section-one .btn-main:hover {
+	background-color: #fb6b43;
+	border: none;
+}
+
+.btn-main-container {
+	padding-top: 65px;
+	padding-bottom: 195px;
+}
+
+.arrow-down a{
+	font-size: 40px;
+	color: #fff;
+}
+
+.arrow-down a:hover{
+	color: #fff;
+}
+
+.arrow-down {
+	padding-bottom: 50px;
+}
+
+/************* Section two **************/
+#section-two {
+	background-color: #fff;
+}
+
+.circle-grey {
+	border: 1px solid #cfd1d3;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	margin: 100px auto 30px auto;
+}
+
+.circle-grey img {
+	margin: 45px auto;
+	display: block;
+}
+
+.services-header {
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+}
+
+.services-descr {
+	font-size: 14px;
+	text-align: center;
+	padding: 0 45px;
+}
+
+.services {
+	margin-bottom: 110px;
+}
+
+/************* Section three **************/
+#section-three {
+	background-image: url(../img/bg-2.png);
+	background-size: cover; 
+}
+
+#section-three .container {
+	padding-top: 100px;
+	padding-bottom: 100px;
+} 
+
+#section-three .email {
+	width: 565px;
+	padding: 20px 25px;
+	font: 300 16px 'Open Sans', sans-serif;
+	margin-right: 30px; 
+}
+
+#section-three .btn-subscribe {
+	text-transform: uppercase;
+	font: 600 16px 'Open Sans', sans-serif;
+	width: 270px;
+	color: #fff;
+	background-color: #fb6b43;
+	border: none;
+}
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	#section-one h1 {
+		font-size: 60px;
+	}
+
+	#section-one .descr-main {
+		font-size: 24px;
+	}
+
+	#section-one .btn-main {
+		width: 190px;
+	}
+
+	.btn-main-container {
+		padding-top: 65px;
+		padding-bottom: 155px;
+	}
+	
+	.services-descr {
+		padding: 0 25px;
+	}
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#section-one nav {
+		padding-right: 50px;
+	}
+
+	#section-one h1 {
+		font-size: 45px;
+	}
+
+	#section-one .descr-main {
+		font-size: 20px;
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	#section-one .btn-main {
+		width: 190px;
+	}
+
+	#section-one .btn-main {
+		width: 190px;
+	}
+
+	.btn-main-container {
+		padding-top: 50px;
+		padding-bottom: 100px;
+	}
+
+	.services-descr {
+		font-size: 14px;
+		text-align: center;
+		padding: 0 45px;
+	}
+
+	.services {
+		margin-bottom: 0px;
+	}
+
+	.services:nth-child(3) {
+		clear: left;
+		margin-bottom: 100px;
+	}
+
+	.services:nth-child(4) {
+		margin-bottom: 100px;
+	}
+
+	#section-three .email {
+		width: 430px;
+	}
+
+	#section-three .btn-subscribe {
+		width: 245px;
+	}
+}
+
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+	header .logo {
+		text-align: left;
+	}
+
+	nav .nav-bar {
+		font-size: 24px;
+	}
+
+	 #section-one h1{
+		font-size: 55px;
+	}
+
+	#section-one .descr-main {
+		padding-left: 50px;
+    	padding-right: 50px;
+    	font: 400 21px/1.5 'Open Sans', sans-serif;
+	}
+
+	#section-one .btn-container {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.btn-main-container {
+		padding-top: 45px;
+		padding-bottom: 40px;
+	}
+
+	.services {
+    	margin-bottom: 50px;
+	}
+
+	.circle-grey {
+		margin-top: 75px;
+	}
+
+	#section-three .container {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	} 
+
+	#section-three .email {
+		width: 285px;
+		font-size: 14px;
+		margin-right: 0; 
+		margin: 0 auto 25px auto;
+		padding: 20px;
+	}
+
+	#section-three .btn-subscribe {
+		width: 245px;
+		font-size: 14px;
+	}
+}
