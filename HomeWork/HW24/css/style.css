@@ -67,6 +67,11 @@ header .row {
 nav .nav-bar {
 	font-size: 24px;
 	padding-left: 10px;
+	color: #fff;
+}
+
+nav p {
+	color: #fff;
 }
 
 nav .nav-bar:hover {
@@ -77,12 +82,14 @@ nav .nav-bar:hover {
 	font: 800 70px 'Open Sans', sans-serif;
 	text-transform: uppercase;
 	padding-top: 175px;
+	color: #fff;
 }
 
 #section-one .descr-main {
 	padding-left: 185px;
 	padding-right: 185px;
 	font: 400 25px 'Open Sans', sans-serif;
+	color: #fff;
 }
 
 #section-one .btn-main {
@@ -160,7 +167,6 @@ nav .nav-bar:hover {
 
 #section-three .email {
 	width: 565px;
-	padding: 20px 25px;
 	font: 300 16px 'Open Sans', sans-serif;
 	margin-right: 30px; 
 }
@@ -172,6 +178,17 @@ nav .nav-bar:hover {
 	color: #fff;
 	background-color: #fb6b43;
 	border: none;
+	padding: 13px 0;
+}
+
+#section-three input::-moz-placeholder {
+  color: #7e8286;
+  font: 300 16px 'Open Sans', sans-serif;
+  line-height: 33px;
+}
+
+.email {
+	box-sizing: content-box;
 }
 
 /************* Section four **************/
@@ -269,7 +286,8 @@ nav .nav-bar:hover {
 
 .show-more-container .btn-show-more {
 	text-transform: uppercase;
-	min-width: 200px;
+	padding-right: 55px;
+	padding-left: 55px;
 	font: 600 16px 'Open Sans', sans-serif;
 	border-radius: 10px;
 	margin: 70px auto 100px auto;
