@@ -466,9 +466,9 @@ nav .nav-bar:hover {
 	#section-three .email {
 		width: 285px;
 		font-size: 14px;
-		margin-right: 0; 
 		margin: 0 auto 25px auto;
-		padding: 20px;
+		padding: 8px;
+		padding-right: 0;
 	}
 
 	#section-three .btn-subscribe {
