@@ -11,6 +11,16 @@ a {
 	text-decoration: none;
 }
 
+h2 {
+	text-transform: uppercase;
+}
+
+.clearfix::after {
+	display: block;
+    content: "";
+    clear: both;
+} 
+
 section {
 	width: 100%;
 }
@@ -18,8 +28,9 @@ section {
 /************* Section one **************/
 
 #section-one {
-	background-image: url(../img/bg.png);
-	color: #fff;
+	background: url(../img/bg.png) center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 .text-orange {
@@ -64,6 +75,8 @@ nav .nav-bar:hover {
 
  #section-one h1{
 	font: 800 70px 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	padding-top: 175px;
 }
 
 #section-one .descr-main {
@@ -75,14 +88,14 @@ nav .nav-bar:hover {
 #section-one .btn-main {
 	text-transform: uppercase;
 	font: 600 16px 'Open Sans', sans-serif;
-	width: 210px;
+	min-width: 210px;
 	color: #fff;
 	background-color: transparent;	
 }
 
 #section-one .btn-main:hover {
 	background-color: #fb6b43;
-	border: none;
+	border-color: #fb6b43;
 }
 
 .btn-main-container {
@@ -104,10 +117,6 @@ nav .nav-bar:hover {
 }
 
 /************* Section two **************/
-#section-two {
-	background-color: #fff;
-}
-
 .circle-grey {
 	border: 1px solid #cfd1d3;
 	border-radius: 50%;
@@ -135,11 +144,12 @@ nav .nav-bar:hover {
 
 .services {
 	margin-bottom: 110px;
+	color: #6c7279;
 }
 
 /************* Section three **************/
 #section-three {
-	background-image: url(../img/bg-2.png);
+	background: url(../img/bg-2.png) center no-repeat;
 	background-size: cover; 
 }
 
@@ -164,6 +174,132 @@ nav .nav-bar:hover {
 	border: none;
 }
 
+/************* Section four **************/
+.works h2  {
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+
+.subheader {
+	margin-bottom: 100px;
+}
+
+.works__container div {
+	border-radius: 10px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin-bottom: 30px;
+	position: relative;
+
+}
+
+.works-img {
+	opacity: 1;
+  	display: block;
+  	width: 100%;
+  	height: auto;
+}
+
+.works-img:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease-in-out;
+  background-color: rgba(247,96,14, .7);
+}
+
+.overlay h3 {
+	font: 600 25px 'Open Sans', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 90px 0 30px 0;
+}
+
+.overlay p {
+	font-size: 14px;
+	color: #fff;
+	padding: 0 40px;
+}
+
+.overlay .btn-project {
+	text-transform: uppercase;
+	min-width: 200px;
+	color: #f7600e;
+	border-color: #fff;
+	font: 600 16px 'Open Sans', sans-serif;
+	border-radius: 10px;
+	margin: 50px auto;
+}
+
+.overlay .btn-project:hover {
+	color: #f7600e;
+	border-color: #f7600e;
+}
+
+.works__container-one {
+	background-image: url(../img/work-1.png);
+}
+
+.works__container-two {
+	background-image: url(../img/work-2.png);
+}
+
+.works__container-three {
+	background-image: url(../img/work-3.png);
+}
+
+.works__container-four {
+	background-image: url(../img/work-4.png);
+}
+
+.works__container-five {
+	background-image: url(../img/work-5.png);
+}
+
+.works__container-six {
+	background-image: url(../img/work-6.png);
+}
+
+.show-more-container .btn-show-more {
+	text-transform: uppercase;
+	min-width: 200px;
+	font: 600 16px 'Open Sans', sans-serif;
+	border-radius: 10px;
+	margin: 70px auto 100px auto;
+}
+
+/************* Section five **************/
+.citatas {
+	background: url(../img/bg-3.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.citatas p {
+	font-size: 25px;
+	color: #fff;
+}
+
+.citatas__img-wrapper {
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.citata { 
+	font-style: italic;
+}
+
+.citata-author {
+	font-weight: 600;
+	margin: 55px auto 100px auto;
+}
 
 
 
@@ -190,8 +326,6 @@ nav .nav-bar:hover {
 	}
 }
 
-
-
 @media (min-width: 768px) and (max-width: 991px) {
 	#section-one nav {
 		padding-right: 50px;
@@ -199,6 +333,7 @@ nav .nav-bar:hover {
 
 	#section-one h1 {
 		font-size: 45px;
+		padding-top: 115px;
 	}
 
 	#section-one .descr-main {
@@ -246,6 +381,23 @@ nav .nav-bar:hover {
 	#section-three .btn-subscribe {
 		width: 245px;
 	}
+
+	.works h2 {
+		margin-top: 70px;
+		margin-bottom: 30px;
+	}
+
+	.subheader {
+		margin-bottom: 70px;
+	}
+
+	.overlay h3 {
+		padding: 25px 0 15px 0;
+	}
+
+	.overlay .btn-project {
+		margin-top: 10px;
+	}
 }
 
 
@@ -260,12 +412,13 @@ nav .nav-bar:hover {
 	}
 
 	 #section-one h1{
-		font-size: 55px;
+		font-size: 48px;
+		padding-top: 25px;
 	}
 
 	#section-one .descr-main {
-		padding-left: 50px;
-    	padding-right: 50px;
+		padding-left: 30px;
+    	padding-right: 30px;
     	font: 400 21px/1.5 'Open Sans', sans-serif;
 	}
 
@@ -303,5 +456,40 @@ nav .nav-bar:hover {
 	#section-three .btn-subscribe {
 		width: 245px;
 		font-size: 14px;
+	}
+
+	.works h2 {
+		margin-top: 40px;
+		margin-bottom: 15px;
+	}
+
+	.subheader {
+		margin-bottom: 30px;
+	}
+
+	.overlay h3 {
+		padding: 20px 0 10px 0;
+	}
+
+	.overlay .btn-project {
+		margin-top: 10px;
+	}
+
+	.show-more-container .btn-show-more {
+		margin-bottom: 25px;
+		margin-top: 0;
+	}
+
+	.citatas p {
+		font-size: 20px;
+	}
+
+	.citatas__img-wrapper {
+		margin-top: 50px;
+		margin-bottom: 25px;
+	}
+
+	.citata-author {
+		margin: 25px auto 50px auto;
 	}
 }
