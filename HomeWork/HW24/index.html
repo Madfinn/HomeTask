@@ -8,10 +8,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!-- Bootstrap 3version -->
 	<script src="https://use.fontawesome.com/233040a0b8.js"></script>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
 </head>
 <body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
 <!--Section-one-->
 	<section id="section-one">
 		<header>
@@ -100,7 +99,9 @@
 	<section id="section-three">
 		<div class="container text-center">
 			<form action="" method="" class="form-inline" role="form">
-				<input type="text" class="email form-control" placeholder="Enter Your email address for newsletter">
+				<div class="form-group">
+					<input type="email" class="email form-control" placeholder="Enter Your email address for newsletter">
+				</div>
 				<button type="submit" class="btn btn-default btn-lg btn-subscribe">subscribe</button>
 			</form>
 		</div>
@@ -191,13 +192,13 @@
 	</section>
 <!--Section-five-->
 	<section id="section-five" class="citatas clearfix">
-		<div class="container text-center">
+		<div id="citata-first" class="container text-center">
 			<div class="citatas__img-wrapper">
-				<img src="img/circle-photo.png" alt="photo of employer">
+				<img src="img/circle-photo.png" alt="photo of client">
 			</div>
 			<div class="row">
 				<div class="col-xs-2">
-					<a href="#"><img src="img/arrow-left.png" alt=""></a>
+					<a href="#"><img src="img/arrow-left.png" class="arrow-left" alt="arrow left"></a>
 				</div>
 				<div class="col-xs-8">
 					<p class="citata">
@@ -207,11 +208,180 @@
 					<p class="citata-author">John Smith</p>
 				</div>
 				<div class="col-xs-2">
-					<a href="#"><img src="img/arrow-right.png" alt=""></a>
+					<a href="#"><img src="img/arrow-right.png" class="arrow-right" alt="arrow right"></a>
 				</div> 		 
 			</div>
 		</div>
-	</section>		
+	</section>
+<!--Section-six-->
+	<section id="section-six" class="team">
+		<div class="container text-center">
+			<h2>OUR <span class="text-orange">team</span></h2>
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<p class="subheader">
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa 
+					</p>
+				</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12 team__container">
+					<div class="team__img-container">
+						<img src="img/team-hover-1.png" class="img-responsive" alt="photo of employer">
+					</div>
+					<h3 class="team__container-name">Catherina Gail</h3>
+					<div class="team__container-socials">
+						<div class="facebook">
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</div>
+						<div class="twitter">
+							<a href="#">
+							<i class="fa fa-twitter" aria-hidden="true"></i></a>
+						</div>
+						<div class="gmail">
+							<a href="#">
+							<i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						</div>
+					</div>	
+					<p class="team__container-descr">
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+					</p>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 team__container">
+					<div class="team__img-container">
+						<img src="img/team-hover-2.png" class="img-responsive" alt="photo of employer">
+					</div>
+					<h3 class="team__container-name">Harvey Rube</h3>
+					<div class="team__container-socials">
+						<div class="facebook">
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</div>
+						<div class="twitter">
+							<a href="#">
+							<i class="fa fa-twitter" aria-hidden="true"></i></a>
+						</div>
+						<div class="gmail">
+							<a href="#">
+							<i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						</div>
+					</div>	
+					<p class="team__container-descr">
+						Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+					</p>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12  team__container">
+					<div class="team__img-container">
+						<img src="img/team-hover-3.png" class="img-responsive" alt="photo of employer">
+					</div>
+					<h3 class="team__container-name">Janet Pris</h3>
+					<div class="team__container-socials">
+						<div class="facebook">
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</div>
+						<div class="twitter">
+							<a href="#">
+							<i class="fa fa-twitter" aria-hidden="true"></i></a>
+						</div>
+						<div class="gmail">
+							<a href="#">
+							<i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						</div>
+					</div>	
+					<p class="team__container-descr">
+						Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+					</p>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 team__container">
+					<div class="team__img-container">
+						<img src="img/team-hover-4.png" class="img-responsive" alt="photo of employer">
+					</div>
+					<h3 class="team__container-name">Kevin Ward</h3>
+					<div class="team__container-socials">
+						<div class="facebook">
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</div>
+						<div class="twitter">
+							<a href="#">
+							<i class="fa fa-twitter" aria-hidden="true"></i></a>
+						</div>
+						<div class="gmail">
+							<a href="#">
+							<i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						</div>
+					</div>	
+					<p class="team__container-descr">
+						Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+					</p>
+				</div>
+			</div>
+		</div>	
+	</section>
+<!--Section-seven-->
+	<section id="section-seven" class="hello">
+		<div class="container text-center">
+			<h2>say <span class="text-orange">hello</span></h2>
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<p class="subheader">
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-8 col-xs-10 col-xs-offset-1  col-sm-offset-2 form-container">
+					<form action="" method="" class="hello__form" role="form">
+						<div class="form-group">
+							<input type="email" placeholder="Your Email"  class="input-email pull-left" name="email">
+							<input type="text" placeholder="Subject" name="subject" class="input-subject pull-right">
+						</div>
+						<div class="form-group">
+						</div>
+						<textarea name="" id="" class="form-control" rows="10" name="message" placeholder="Your Message"></textarea>
+					</form>
+				</div>
+				<div class="row hello__socials-container">
+					<div class="col-sm-4 col-sm-offset-2 col-xs-8 col-xs-offset-2 hello__socials-container-button">
+						<form action="" method="" class="hello__form" role="form">
+							<button type="submit" class="btn btn-default btn-lg btn-hire-us">hire us</button>	
+						</form>		
+					</div>
+					<div class="col-sm-4 col-xs-12 text-right hello__socials">
+						<div class="facebook">
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</div>
+						<div class="twitter">
+							<a href="#">
+							<i class="fa fa-twitter" aria-hidden="true"></i></a>
+						</div>
+						<div class="gmail">
+							<a href="#">
+							<i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						</div>
+						<div class="dribble">
+							<a href="#">
+							<i class="fa fa-dribbble" aria-hidden="true"></i></a>
+						</div>
+						<div class="behance">
+							<a href="#">
+							<i class="fa fa-behance" aria-hidden="true"></i></a>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>	
+	</section>	
+<!--Footer-->
+<footer>
+	<div class="container footer">
+		<div class="row">
+			<div class="footer__address col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 text-left">
+				<p> &copy; 2015 COPYRIGHT DESIGN STUDIO</p>
+			</div>
+			<div class="footer__design col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 text-right">
+				DESIGNED BY <span>SYMU</span><span class="text-orange">.</span>CO
+			</div>
+		</div>
+	</div>
+</footer>		
 </body>
 <!--Anna Golovenko 14.12.17-->
 </html>

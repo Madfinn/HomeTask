@@ -5,6 +5,7 @@ body {
 
 p {
 	font-size: 16px;
+	line-height: 2;
 }
 
 a {
@@ -15,14 +16,36 @@ h2 {
 	text-transform: uppercase;
 }
 
+h3 {
+	font: 600 25px 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+
 .clearfix::after {
 	display: block;
     content: "";
     clear: both;
 } 
 
-section {
+section, footer {
 	width: 100%;
+}
+
+.works h2, .team h2, .hello h2  {
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+
+.subheader {
+	margin-bottom: 100px;
+}
+
+.visible {
+	display: block;
+}
+
+.hidden {
+	display: none;
 }
 
 /************* Section one **************/
@@ -192,15 +215,6 @@ nav .nav-bar:hover {
 }
 
 /************* Section four **************/
-.works h2  {
-	margin-top: 100px;
-	margin-bottom: 30px;
-}
-
-.subheader {
-	margin-bottom: 100px;
-}
-
 .works__container div {
 	border-radius: 10px;
 	background-size: cover;
@@ -208,7 +222,6 @@ nav .nav-bar:hover {
 	background-repeat: no-repeat;
 	margin-bottom: 30px;
 	position: relative;
-
 }
 
 .works-img {
@@ -233,9 +246,7 @@ nav .nav-bar:hover {
 }
 
 .overlay h3 {
-	font: 600 25px 'Open Sans', sans-serif;
 	color: #fff;
-	text-transform: uppercase;
 	padding: 90px 0 30px 0;
 }
 
@@ -319,7 +330,207 @@ nav .nav-bar:hover {
 	margin: 55px auto 100px auto;
 }
 
+/************* Section six **************/
+.team__container p {
+	font-size: 14px;
+	text-align: center;
+	line-height: 2;
+	padding: 0 10px;
+}
 
+.team+h2, .team h2+p {
+	color: #9da1a5;
+}
+
+.team h3 {
+	margin: 5px 0 35px 0;
+}
+
+.team__container-socials div{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: #9da1a5;
+	margin: 0 5px 35px 5px;
+	font-size: 15px;
+	padding: 2px;
+	display: inline-block;
+}
+
+.team__container-socials a {
+	color: #fff;
+}
+
+.team__container-name, .team__container-descr {
+	color: #9da1a5;
+}
+
+.team__img-container {
+	width: 250px;
+	height: 280px;
+	margin: 0 auto;
+}
+
+.team__img-container img {
+	filter: grayscale(100%);
+	border-radius: 10px;
+	transform: scale(0.8);
+	border: 1px solid #9da1a5;
+	transition: all .4s ease;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.team__img-container img:hover {
+	filter: none;
+	transform: scale(1);
+	transform: translateY(-35px);
+	cursor: pointer;
+	transition: all .4s ease;
+	border: none;
+	border-bottom: 4px solid #f7600e;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+/* .team__img-container::before img:hover {
+    border-radius: 10px;
+    content: '';
+    display: block;
+    height: 6px;
+    background: #ff1744;
+    position: absolute; 
+    bottom: -4px;
+    width: 150px;
+} */
+
+.team__img-container::before img:hover {
+	border-radius: 5px;
+}
+
+.team__container:hover .team__container-name, .team__container:hover .team__container-descr {
+	color: #3b434c;
+}
+
+.team__container:hover .facebook {
+	background-color: #205b9f;
+}
+
+.team__container:hover .twitter {
+	background-color: #00ace3;
+}
+
+.team__container:hover .gmail {
+	background-color: #ff3921;
+}
+
+.team .container, .hello .container {
+	padding-bottom: 100px;
+}
+
+/************* Section six **************/
+.hello {
+	background: url(../img/bg-4.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	color: #fff;
+}
+
+.hello input, .hello textarea {
+	border-radius: 10px;
+	padding: 15px 20px;
+	font: 300 16px 'Open Sans', sans-serif;
+	border: none;
+	margin-bottom: 30px;
+}
+
+.hello input {
+	width: 47%;
+}
+
+.hello form {
+	color: #3b434c;
+}
+
+.hello__socials-container{
+	margin: 0;
+	text-align: left;
+}
+
+.hello input::-moz-placeholder, .hello textarea::-moz-placeholder {
+  color: #7e8286;
+  font: 300 16px 'Open Sans', sans-serif;
+  line-height: 18px;
+}
+
+.hello .btn-hire-us {
+	text-transform: uppercase;
+	font: 600 16px 'Open Sans', sans-serif;
+	color: #fff;
+	background-color: #fb6b43;
+	border: none;
+	padding: 13px 75px;
+}
+
+.hello__socials div {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #9da1a5;
+	margin: 0 5px 35px 5px;
+	font-size: 22px;
+	display: inline-block;
+}	
+
+.hello__socials a {
+	text-align: center;
+	color: #fff;
+	padding: 4px;
+	display: block;
+}
+
+.hello__socials .facebook {
+	background-color: #205b9f;
+}
+
+.hello__socials .twitter {
+	background-color: #00ace3;
+}
+
+.hello__socials .gmail {
+	background-color: #ff3921;
+}
+
+.hello__socials .dribble {
+	background-color: #ff72a5;
+}
+
+.hello__socials .behance {
+	background-color: #009bd5;
+}
+
+/* ***********Footer*********** */
+footer {
+	background-color: #3b434c;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 50px 0;
+}
+
+footer p {
+	font-size: 16px;
+}
+
+.footer__design span {
+	font-weight: 800;
+}
+
+.footer__design span:last-child {
+	font-size: 20px;
+}
+
+
+/* ***********Media Queries************** */
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	#section-one h1 {
@@ -416,8 +627,22 @@ nav .nav-bar:hover {
 	.overlay .btn-project {
 		margin-top: 10px;
 	}
-}
 
+	.hello__socials-container{
+		text-align: center;
+	}
+
+	.hello__socials div {
+		width: 36px;
+		height: 36px;
+		margin: 0 2px 35px 2px;
+		font-size: 22px;
+	}
+
+	footer .container div {
+		text-align: center;
+	}
+}
 
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -476,7 +701,7 @@ nav .nav-bar:hover {
 		font-size: 14px;
 	}
 
-	.works h2 {
+	.works h2, .team h2 {
 		margin-top: 40px;
 		margin-bottom: 15px;
 	}
@@ -509,5 +734,72 @@ nav .nav-bar:hover {
 
 	.citata-author {
 		margin: 25px auto 50px auto;
+	}
+
+	.team__container p {
+		text-align: center;
+	}
+
+	.team .container, .hello .container {
+		padding-bottom: 35px;
+	}
+
+	.team h3 {
+    	margin: 5px 0 15px 0;
+	}
+
+	.team__container-socials div {
+		margin-bottom: 15px;
+	}
+
+	.hello h2  {
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+
+	.hello input, .hello textarea {
+		border-radius: 10px;
+		padding: 15px 20px;
+		font: 300 16px 'Open Sans', sans-serif;
+		border: none;
+		margin-bottom: 30px;
+	}
+
+	.hello input {
+		width: 100%;
+	}
+
+	.hello .btn-hire-us {
+		margin-bottom: 30px;
+		padding: 13px 75px;
+	} 
+
+	.hello__socials-container {
+		margin: 0 -15px;
+		text-align: center;
+	}
+
+	.hello__socials {
+		text-align: center;
+	}
+
+	.hello__socials div {
+		width: 30px;
+		height: 30px;
+		margin: 0 3px 35px 3px;
+		font-size: 18px;
+	}
+
+	footer {
+		padding: 30px 0;
+	}
+
+	footer p {
+		font-size: 14px;
+		text-align: center;
+	}
+
+	footer .container div {
+		text-align: center;
 	}
 }
