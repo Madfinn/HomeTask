@@ -469,12 +469,12 @@ div[class|="img"] {
     display: block;
     height: 6px;
     background: #ff1744;
-    position: absolute;
+    position: absolute; 
     bottom: -4px;
     width: 150px;
 }
 
-.active-tab p>a{
+.active-tab a {
  	font: 18px GothamProMedium;	
 }
 
