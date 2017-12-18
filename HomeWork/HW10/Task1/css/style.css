@@ -474,7 +474,7 @@ div[class|="img"] {
     width: 150px;
 }
 
-#active a{
+.active-tab p>a{
  	font: 18px GothamProMedium;	
 }
 
@@ -519,8 +519,13 @@ div[class|="img"] {
 
 
 /* Full reset block (hidden) */
-.full-reset {
+.hidden {
 	display: none;
+}
+
+.visible {
+	display: block;
+
 }
 
 .full-reset>.picture {
@@ -529,9 +534,9 @@ div[class|="img"] {
 
 
 /* Family block (hidden) */
-.family-block {
+/* .family-block {
 	display: none;
-}
+} */
 
 .family-block>.picture {
 	background: url(../img/family.png) no-repeat 90px 0;
@@ -539,9 +544,9 @@ div[class|="img"] {
 
 
 /* All-included block (hidden) */
-.all-included {
+/* .all-included {
 	display: none;
-}
+} */
 
 .all-included>.picture {
 	background: url(../img/all_included.png) no-repeat 40px 0;

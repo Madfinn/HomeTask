@@ -235,28 +235,28 @@
 	<div class="wrapper">
 		<h2>Варианты безлимитного участия</h2>
 		<div class="variants">
-			<a href="#">
-			 	<div class="tab-1 active-tab">
+			<a href="#quick-start">
+			 	<div class="tab-1">
 					<div class="img-1"></div>
-					<p id="active"><a href="#">Быстрый старт</a></p>
+					<p id="active"><a href="#quick-start">Быстрый старт</a></p>
 				</div>
 			</a>
-			<a href="#">
+			<a href="#full-reset">
 			 	<div class="tab-2">
 					<div class="img-2"></div>
-					<p><a href="#">Полная Перезагрузка</a></p>
+					<p><a href="#full-reset">Полная Перезагрузка</a></p>
 				</div>
 			</a>
-			<a href="#">	
+			<a href="#family-block">	
 				<div class="tab-3">
 					<div class="img-3"></div>
-					<p><a href="#">Семейное участие</a></p>
+					<p><a href="#family-block">Семейное участие</a></p>
 				</div>
 			</a>
-			<a href="#">	
+			<a href="#all-included">	
 				<div class="tab-4">
 					<div class="img-4"></div>
-					<p><a href="#">ВСЕ включено</a></p>
+					<p><a href="#all-included">ВСЕ включено</a></p>
 				</div>
 			</a>			
 		</div>
@@ -267,7 +267,7 @@
 <div class="section-eighth">
 	<div class="wrapper">
 		<!-- Quick-start block (visible) -->
-		<div class="quick-start">
+		<div id="quick-start" class="quick-start visible">
 			<div class="picture"></div>
 			<div class="txt">
 				<h3 class="event-header">Быстрый старт</h3>
@@ -285,7 +285,7 @@
 			</div>
 		</div>
 		<!-- Full reset block (hidden) -->
-		<div class="full-reset">
+		<div id="full-reset" class="full-reset hidden">
 			<div class="picture"></div>
 			<div class="txt">
 				<h3 class="event-header">Полная Перезагрузка</h3>
@@ -310,7 +310,7 @@
 		</div>
 		<!-- End of full reset block -->
 		<!-- Family block (hidden) -->
-		<div class="family-block">
+		<div id="family-block" class="family-block hidden">
 			<div class="picture"></div>
 			<div class="txt">
 				<h3 class="event-header">Семейное участие</h3>
@@ -341,7 +341,7 @@
 		</div>
 		<!-- End of family block -->
 	<!-- All-included block (hidden) -->
-		<div class="all-included">
+		<div id="all-included" class="all-included hidden">
 			<div class="picture"></div>
 			<div class="txt">
 				<h3 class="event-header">Все включено</h3>
@@ -485,6 +485,8 @@
 		<p>Политика конфиденциальности</p>
 	</div>
 </div> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/main.js"></script>	
 <!-- Anna Golovenko 28.10.17 -->
 </body>
 </html>
