@@ -29,6 +29,7 @@ h3 {
 
 section, footer {
 	width: 100%;
+	overflow-x: hidden;
 }
 
 .works h2, .team h2, .hello h2  {
@@ -392,17 +393,6 @@ nav .nav-bar:hover {
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
 }
-
-/* .team__img-container::before img:hover {
-    border-radius: 10px;
-    content: '';
-    display: block;
-    height: 6px;
-    background: #ff1744;
-    position: absolute; 
-    bottom: -4px;
-    width: 150px;
-} */
 
 .team__img-container::before img:hover {
 	border-radius: 5px;
