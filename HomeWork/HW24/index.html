@@ -8,13 +8,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!-- Bootstrap 3version -->
 	<script src="https://use.fontawesome.com/233040a0b8.js"></script>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
 </head>
 <body>
 <!--Section-one-->
 	<section id="section-one">
-		<header>
-			<div class="container">	
+		<div class="container">	
+			<header>
 				<div class="row">
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
 						<p class="logo text-center">
@@ -23,12 +22,60 @@
 					</div>
 					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6">
 						<nav>
-							<p class="text-right">Menu <i class="fa fa-bars nav-bar" aria-hidden="true"></i></p>
+							<p class="text-right">Menu
+								<!--Hamburger with onclick drops Modal menu-->
+								 <a href="#" class="hamburger" data-toggle="modal" data-target="#modalMenu">
+								 	<i class="fa fa-bars nav-bar" aria-hidden="true"></i>
+								 </a>
+								 <!--Modal menu-->
+								<div class="modal fade" id="modalMenu" tabindex="-1" role="dialog">
+									<div class="modal-dialog modal-menu" role="document">
+										<div class="modal-content modalMenu-content">
+											<div class="modal-header modalMenu-header">
+												<button type="button" class="close modalMenu-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											</div>
+											<div class="modal-body modalMenu-body">
+												<h2><a href="#section-one">HOME</a></h2>
+												<h2><a href="#section-six">ABOUT US</a></h2>
+												<h2><a href="#section-two">SERVICES</a></h2>
+												<h2><a href="#section-four">OUR WORKS</a></h2>
+												<h2><a href="#section-seven" class="modalMenu-contact">CONTACT</a></h2>
+											</div>
+											<div class="modal-footer modalMenu-footer">
+												<div class=" hello__socials-container">
+													<div class="text-center hello__socials">
+														<div class="facebook">
+															<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+														</div>
+														<div class="twitter">
+															<a href="https://twitter.com" target="_blank">
+															<i class="fa fa-twitter" aria-hidden="true"></i></a>
+														</div>
+														<div class="gmail">
+															<a href="https://www.google.com/gmail" target="_blank">
+															<i class="fa fa-google-plus" aria-hidden="true"></i></a>
+														</div>
+														<div class="dribble">
+															<a href="https://dribbble.com" target="_blank">
+															<i class="fa fa-dribbble" aria-hidden="true"></i></a>
+														</div>
+														<div class="behance">
+															<a href="https://www.behance.net" target="_blank">
+															<i class="fa fa-behance" aria-hidden="true"></i></a>
+														</div>
+													</div>	
+												</div>											
+											</div>
+										</div>
+									</div>								
+								</div>
+								<!--/ Modal menu-->
+							</p>
 						</nav>
 					</div>
 				</div>
-			</div>
-		</header>
+			</header>
+		</div>
 		<div class="container">
 			<div class="row">
 				<div>
@@ -197,17 +244,17 @@
 				<img src="img/circle-photo.png" alt="photo of client">
 			</div>
 			<div class="row">
-				<div class="col-xs-2">
+				<div class="col-sm-2 hidden-xs">
 					<a href="#"><img src="img/arrow-left.png" class="arrow-left" alt="arrow left"></a>
 				</div>
-				<div class="col-xs-8">
+				<div class="col-xs-12 col-sm-8">
 					<p class="citata">
 						These guys are incredible! I get my project in 10 days and it was awesome!
 						Very good service! Highly recommended!
 					</p>
 					<p class="citata-author">John Smith</p>
 				</div>
-				<div class="col-xs-2">
+				<div class="col-sm-2 hidden-xs">
 					<a href="#"><img src="img/arrow-right.png" class="arrow-right" alt="arrow right"></a>
 				</div> 		 
 			</div>
@@ -381,7 +428,10 @@
 			</div>
 		</div>
 	</div>
-</footer>		
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 <!--Anna Golovenko 14.12.17-->
 </html>

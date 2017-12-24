@@ -41,13 +41,96 @@ section, footer {
 	margin-bottom: 100px;
 }
 
-.visible {
+.active {
 	display: block;
 }
 
 .hidden {
 	display: none;
 }
+
+/************* Modal Menu **************/
+#modalMenu {
+	background-color: rgba(0,0,0,.47);
+}
+.modalMenu-content {
+	text-align: center;
+	background-color: rgba(0,0,0,0);
+	box-shadow: none;
+	border: none;
+}
+
+.modalMenu-header {
+	border-bottom: none;
+}
+
+.modalMenu-footer {
+	border-top: none;
+	margin-top: -30px;
+}
+
+.modalMenu-footer .hello__socials div {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.modalMenu-footer .hello__socials a {
+	font-size: 22px;
+}
+
+.modalMenu-footer .hello__socials a:hover, .modalMenu-footer .hello__socials a:active {
+	color: #fff;
+}
+
+.modalMenu-close:focus {
+	outline: none;
+}
+
+.modalMenu-close {
+	color: #fff;
+	text-shadow: none;
+	opacity: 1;
+	font-size: 35px;
+}
+
+.modalMenu-contact::after {
+	content: '';
+    display: block;
+    height: 2px;
+    background: #fb6b43;
+    margin: 55px auto;
+    width: 165px;
+}
+
+.modal-menu h2 {
+	margin-top: 45px;
+}
+
+.modal-menu a {
+	font-size: 35px;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.modal-menu a:hover, .modalMenu-close:hover, .modal-menu a:active, .modalMenu-close:active {
+	opacity: 1;
+	color: #fb6b43;
+	text-decoration: none;
+}
+
+/************* End of Modal Menu **************/
+
+/* #section-one .overlay {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.47);
+	display: none;
+	z-index: 999;
+} */
+
 
 /************* Section one **************/
 
@@ -82,6 +165,10 @@ section, footer {
 .logo a:active {
 	text-decoration: none;
 	color: #fff;
+}
+
+.hamburger:focus {
+	outline: none;
 }
 
 header .row {
@@ -241,9 +328,9 @@ nav .nav-bar:hover {
   position: absolute;
   height: 100%;
   width: 100%;
-  opacity: 0;
   transition: .3s ease-in-out;
   background-color: rgba(247,96,14, .7);
+  opacity: 0;
 }
 
 .overlay h3 {
@@ -380,6 +467,7 @@ nav .nav-bar:hover {
 	transition: all .4s ease;
 	overflow: hidden;
 	margin: 0 auto;
+	position: relative;
 }
 
 .team__img-container img:hover {
@@ -394,9 +482,27 @@ nav .nav-bar:hover {
 	border-bottom-left-radius: 0;
 }
 
-.team__img-container::before img:hover {
+.team__img-container:hover .team__img-container img::after {
+	content: '';
 	border-radius: 5px;
+	width: 100%;
+	height: 4px;
+	display: block;
+	background-color: #f7600e;
+	position: absolute;
+	bottom: 0;
 }
+
+/* .active-tab::before {
+    border-radius: 10px;
+    content: '';
+    display: block;
+    height: 6px;
+    background: #ff1744;
+    position: absolute; 
+    bottom: -4px;
+    width: 150px;
+} */
 
 .team__container:hover .team__container-name, .team__container:hover .team__container-descr {
 	color: #3b434c;
@@ -509,6 +615,7 @@ footer {
 
 footer p {
 	font-size: 16px;
+	margin-bottom: 0;
 }
 
 .footer__design span {
