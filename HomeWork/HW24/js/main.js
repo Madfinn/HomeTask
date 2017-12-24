@@ -1,11 +1,11 @@
-$(document).ready(function() {
-	$('.modal-menu a').on('click', function(e){
-		/*e.preventDefault();*/
-		$('.modal').addClass('hidden');
-		$('body').removeClass('modal');/*modal('hide')*/
-		/*$('body').removeClass('modal-open');*/
-		
-		$(this).attr('href').show();
 
-	})
+$(document).ready(function() {
+	$('#modalThanks').modal('show');
+
+ $('.modal-body').find('a').on('click', function(e){
+  e.preventDefault();
+     var id  = $(this).attr('href'), top = $(id).offset().top;
+     $('body,html').animate({scrollTop: top}, 1000);
+  $('#modalMenu').modal('hide');
+ })
 });
