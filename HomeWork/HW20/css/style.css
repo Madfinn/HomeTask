@@ -122,16 +122,19 @@ section h2+p {
 /* ****************Header********************* */
 header {
 	background: #fff;
+	position: fixed;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0,.05);
+	z-index: 999;
 }
 
 .logo {
 	width: 8.55%;
-	padding: 25px 0;
+	padding-top: 25px;
 }
 
 /* ****************Navigation********************* */
 nav {
-	padding: 30px 0;
+	padding: 15px 0;
 	font: 500 1.8rem 'Poppins', sans-serif;
 	text-transform: capitalize;
 }
@@ -146,7 +149,7 @@ nav {
 
 .nav-items li {
 	display: inline-block;
-	padding-right: 18px;
+	/* padding-right: 18px; */
 }
 
 .nav-items li:last-child {
@@ -155,6 +158,39 @@ nav {
 
 .nav-items li>a {
 	color: #000;
+}
+
+/* ****************Scrollspy********************* */
+body {
+	position: relative;
+}
+
+.nav-items {
+	border-bottom: none;
+}
+
+.nav-items>li>a:hover  {
+	border: none;
+    background-color: #ff000066;
+    color: #fff;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #FC5F45;
+    border: none;
+}
+
+.arrowDown {
+	text-align: center;
+	color: #fff;
+	font-size: 2.1rem;
+    line-height: 0;
+    margin-top: -7px;
+    margin-bottom: 7px;
+}
+
+.nav-tabs>li.active .arrowDown {
+	color: #FC5F45;
 }
 
 /* ****************Section main********************* */
