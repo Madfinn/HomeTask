@@ -1,3 +1,4 @@
+/* 1 */
 .section-main .btn-container .btn, .section-two .section-two__descr .btn-container .btn, .section-seven .photo-container .btn-container .btn, .section-eleven .container .form-container .btn-container .btn .submit {
   font-size: 1em;
   color: #000;
@@ -84,6 +85,7 @@ a:hover, a:active, a:focus {
 .block-right {
   float: right; }
 
+/* 2 */
 .header-sect {
   background-color: #303030;
   position: fixed;
@@ -189,6 +191,7 @@ a:hover, a:active, a:focus {
             margin: 0 auto;
             margin-top: 1em; } }
 
+/* 3 */
 .section-main {
   background: url(../img/Sect_main/bg.jpg) no-repeat center;
   background-size: cover;
@@ -229,11 +232,13 @@ a:hover, a:active, a:focus {
       text-align: center;
       margin-bottom: 6.8em; } }
 
+/* 4 */
 .section-one {
   background-color: #fff; }
   .section-one .section-container {
     text-align: center; }
 
+/* 5 */
 .section-two {
   background-color: #f5f5f5; }
   .section-two .section-two__descr .header {
@@ -253,6 +258,7 @@ a:hover, a:active, a:focus {
     .section-two .section-two__descr .btn-container {
       text-align: center; } }
 
+/* 6 */
 .section-three {
   background-color: #fff; }
   .section-three .header {
@@ -273,6 +279,7 @@ a:hover, a:active, a:focus {
       font-size: 1em;
       color: #949494; }
 
+/* 7 */
 .section-four {
   background: url(../img/Sect_four/bg.jpg) no-repeat center;
   background-size: cover;
@@ -327,6 +334,7 @@ a:hover, a:active, a:focus {
         text-align: center;
         padding-left: 0; } }
 
+/* 8 */
 .section-five {
   background-color: #fff; }
   .section-five .container {
@@ -400,6 +408,7 @@ a:hover, a:active, a:focus {
             margin-top: 0;
             margin-bottom: 20%; } }
 
+/* 9 */
 .section-six {
   background-color: #303030; }
   .section-six .header {
@@ -411,6 +420,7 @@ a:hover, a:active, a:focus {
     .section-six .descr a {
       color: #29c5f2; }
 
+/* 10 */
 .section-seven {
   background-color: #fff; }
   .section-seven .photo-container .img-container {
@@ -426,6 +436,7 @@ a:hover, a:active, a:focus {
     margin-top: 5.1em;
     margin-bottom: 5.1em; }
 
+/* 11 */
 .section-eight {
   background-color: #f5f5f5; }
   .section-eight .container {
@@ -477,6 +488,7 @@ a:hover, a:active, a:focus {
     .section-eight .container .team-container:hover .info {
       border-color: #000; }
 
+/* 12 */
 .section-nine {
   background-color: #1a1a1a; }
   .section-nine .header {
@@ -492,6 +504,7 @@ a:hover, a:active, a:focus {
     color: #7b6c63;
     text-align: center; }
 
+/* 13 */
 .section-ten {
   background-color: #fff; }
   .section-ten .container {
@@ -563,6 +576,7 @@ a:hover, a:active, a:focus {
       .section-ten .blog-container .content-container .content {
         text-align: center; } }
 
+/* 14 */
 .section-eleven {
   background-color: #f5f5f5; }
   .section-eleven .container .header {
@@ -590,6 +604,7 @@ a:hover, a:active, a:focus {
     margin-bottom: 3.1em; }
     .section-eleven .container .form-container .message-container .form-message {
       width: 100%;
+      line-height: 0.5;
       background-color: #f5f5f5;
       border: none;
       border-bottom: 4px solid #000;
@@ -601,6 +616,7 @@ a:hover, a:active, a:focus {
   .section-eleven .container .form-container .btn-container {
     margin-bottom: 5.1em; }
 
+/* 15 */
 .section-twelve {
   background-color: #222222; }
   .section-twelve .section-twelve__container {
@@ -647,6 +663,7 @@ a:hover, a:active, a:focus {
         .section-twelve .section-twelve__container .logo {
           margin: 0 auto; } }
 
+/* 16 */
 .footer {
   background-color: #1c1c1c; }
   .footer .copyrights {
@@ -655,5 +672,24 @@ a:hover, a:active, a:focus {
     font-size: 1em;
     margin-top: 2em;
     margin-bottom: 1em; }
+
+/* 
+1. Variables and general styles 
+2. Menu 
+3. Main section(Home)
+4. Know About Us
+5. We Are the best
+6. Services We provide
+7. Our Skills
+8. Some Recent Projects
+9. Latest From Twitter
+10. Photo section
+11. Our Team Members
+12. What Our Clients are saying
+13. Our Blog
+14. Contact
+15. Mairala info
+16. Footer
+*/
 
 /*# sourceMappingURL=style.css.map */
