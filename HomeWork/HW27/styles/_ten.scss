@@ -5,9 +5,20 @@
 		@extend %sectionHeader;
 		.blog-container {
 			.img-container {
-				.line-img-right {
-					display: block;
-					float: left;
+				position: relative;
+				.carousel-blog {
+					.blog-indicators {
+						position: absolute;
+						left: 50px;
+						bottom: 5px;
+						li {
+							background-color: $brown;
+							border-color: $brown;
+						}
+					}
+					.arrow {
+						color: $brown;
+					}
 				}
 			}
 			.content-container {
@@ -35,6 +46,7 @@
 					}
 				}
 			}
+		}		
 			.btn-container {
 				text-align: center;
 				margin-bottom: 5.6em;
@@ -48,7 +60,13 @@
 					color: $white;
 					font-size: 0.875em;
 					line-height: 75px;
-					margin-left: 3.4em;
+					margin-left: 7em;
+					@include laptop {
+						margin-left: 6em;
+					}
+					@include tablet {
+						margin-left: 5em;
+					}
 					@include phone {
 						margin: 3em auto 0 auto;
 					}
@@ -75,5 +93,4 @@
 		}
 	}
 				
-	}
 }

@@ -6,6 +6,7 @@ $brownDark: #272420;
 $greyDark: #303030;
 $greyDark1: #222222;
 $greyDark2: #1c1c1c;
+$greyDark3: #1a1a1a;
 $greyLight: #949494;
 $greyLight2: #f5f5f5;
 $greyLight3: #e4e4e4;
@@ -100,6 +101,9 @@ $greyLight3: #e4e4e4;
  		font-size: 1.5em;
  		text-transform: uppercase;
  		@include marginTB(3.75em, 1.6em);
+ 		@include phone {
+ 			@include marginTB(1.75em, 0.6em)
+ 		}
  	}
  	.descr {
  		font-size: 1em;

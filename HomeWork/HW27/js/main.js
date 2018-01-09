@@ -14,40 +14,49 @@ $(document).ready(function() {
     });
        
 // Progress bar (section four)
-    $(".my-progress-bar-1").circularProgress({
+    var progressCircle_1 = $(".progress-1").circularProgress({
         line_width: 2,
         color: "#fff",
         starting_position: 0, 
         percent: 0, 
         percentage: true,
-    }).circularProgress('animate', 90, 2000);
-    $(".my-progress-bar-2").circularProgress({
+        text: ''
+    }).circularProgress('animate', 80, 2000);
+
+    var progressCircle_2 = $(".progress-2").circularProgress({
         line_width: 2,
         color: "#fff",
         starting_position: 0, 
         percent: 0, 
         percentage: true,
+        text: ''
     }).circularProgress('animate', 70, 2000);
-    $(".my-progress-bar-3").circularProgress({
+
+    var progressCircle_3 = $(".progress-3").circularProgress({
         line_width: 2,
         color: "#fff",
         starting_position: 0, 
         percent: 0, 
         percentage: true,
+        text: ''
     }).circularProgress('animate', 85, 2000);
-    $(".my-progress-bar-4").circularProgress({
+
+    var progressCircle_4 = $(".progress-4").circularProgress({
         line_width: 2,
         color: "#fff",
         starting_position: 0, 
         percent: 0, 
         percentage: true,
-    }).circularProgress('animate', 90, 2000);
-    $(".my-progress-bar-5").circularProgress({
+        text: ''
+    }).circularProgress('animate', 92, 2000);
+
+    var progressCircle_5 = $(".progress-5").circularProgress({
         line_width: 2,
         color: "#fff",
         starting_position: 0, 
         percent: 0, 
         percentage: true,
+        text: ''
     }).circularProgress('animate', 69, 2000);
 });
 

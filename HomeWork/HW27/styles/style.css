@@ -38,6 +38,10 @@
   text-transform: uppercase;
   margin-top: 3.75em;
   margin-bottom: 1.6em; }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .section-two .header, .section-three .header, .section-four .header, .section-six .header, .section-nine .header {
+      margin-top: 1.75em;
+      margin-bottom: 0.6em; } }
 .section-two .descr, .section-three .descr, .section-four .descr, .section-six .descr, .section-nine .descr {
   font-size: 1em;
   margin-bottom: 3em; }
@@ -290,10 +294,11 @@ a:hover, a:active, a:focus {
         text-align: center;
         margin-left: 40%;
         line-height: 170px;
-        font-size: 1em; }
+        font-size: 1em;
+        font-family: 'Raleway', sans-serif; }
     .section-four .skills-container .progress-container .skill-name {
       margin-top: 1.8em;
-      padding-left: 3em; }
+      padding-left: 2.5em; }
   @media (min-width: 769px) and (max-width: 991px) {
     .section-four .skills-container .progress-container {
       margin-bottom: 3em;
@@ -473,10 +478,11 @@ a:hover, a:active, a:focus {
       border-color: #000; }
 
 .section-nine {
-  background-color: #303030; }
+  background-color: #1a1a1a; }
   .section-nine .header {
     color: #fff;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 0; }
   .section-nine .descr {
     color: #949494;
     text-align: center; }
@@ -490,9 +496,17 @@ a:hover, a:active, a:focus {
   background-color: #fff; }
   .section-ten .container {
     text-align: center; }
-    .section-ten .container .blog-container .img-container .line-img-right {
-      display: block;
-      float: left; }
+    .section-ten .container .blog-container .img-container {
+      position: relative; }
+      .section-ten .container .blog-container .img-container .carousel-blog .blog-indicators {
+        position: absolute;
+        left: 50px;
+        bottom: 5px; }
+        .section-ten .container .blog-container .img-container .carousel-blog .blog-indicators li {
+          background-color: #7b6c63;
+          border-color: #7b6c63; }
+      .section-ten .container .blog-container .img-container .carousel-blog .arrow {
+        color: #7b6c63; }
     .section-ten .container .blog-container .content-container .line-img-left {
       display: block;
       float: left;
@@ -512,10 +526,10 @@ a:hover, a:active, a:focus {
       .section-ten .container .blog-container .content-container .content .continue {
         color: #303030;
         text-decoration: underline; }
-    .section-ten .container .blog-container .btn-container {
+    .section-ten .container .btn-container {
       text-align: center;
       margin-bottom: 5.6em; }
-      .section-ten .container .blog-container .btn-container .btn-post {
+      .section-ten .container .btn-container .btn-post {
         display: inline-block;
         width: 92px;
         height: 92px;
@@ -525,23 +539,29 @@ a:hover, a:active, a:focus {
         color: #fff;
         font-size: 0.875em;
         line-height: 75px;
-        margin-left: 3.4em; }
+        margin-left: 7em; }
+        @media (min-width: 992px) and (max-width: 1200px) {
+          .section-ten .container .btn-container .btn-post {
+            margin-left: 6em; } }
+        @media (min-width: 769px) and (max-width: 991px) {
+          .section-ten .container .btn-container .btn-post {
+            margin-left: 5em; } }
         @media (min-width: 320px) and (max-width: 768px) {
-          .section-ten .container .blog-container .btn-container .btn-post {
+          .section-ten .container .btn-container .btn-post {
             margin: 3em auto 0 auto; } }
-    @media (min-width: 320px) and (max-width: 768px) {
-      .section-ten .container .blog-container {
+  @media (min-width: 320px) and (max-width: 768px) {
+    .section-ten .blog-container {
+      text-align: center;
+      margin-top: 1em; }
+      .section-ten .blog-container .content-container .date {
         text-align: center;
-        margin-top: 1em; }
-        .section-ten .container .blog-container .content-container .date {
-          text-align: center;
-          margin-top: 2em; }
-        .section-ten .container .blog-container .content-container .article-header {
-          text-align: center;
-          margin-top: 1em;
-          margin-bottom: 1.25em; }
-        .section-ten .container .blog-container .content-container .content {
-          text-align: center; } }
+        margin-top: 2em; }
+      .section-ten .blog-container .content-container .article-header {
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 1.25em; }
+      .section-ten .blog-container .content-container .content {
+        text-align: center; } }
 
 .section-eleven {
   background-color: #f5f5f5; }
