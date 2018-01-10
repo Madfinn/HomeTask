@@ -44,11 +44,9 @@
 			}
 		.btn-container {	
 			margin-bottom: 5.1em;
-				.btn {
-					.submit {
-						@extend %button;
+				.submit {
+					@extend %button;
 
-					}
 				}
 			}
 		}	
