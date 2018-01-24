@@ -1,0 +1,59 @@
+.sect-three {
+  position: relative;
+     .center {
+   	  position: relative;
+      z-index: 0;
+      .slick-slide {
+        .overlay {
+        padding: 3.5rem 2.5rem;
+        margin-top: -335px;
+        width: 100%;
+        height: auto;
+        color: $white;
+        opacity: 0;
+        transition: opacity .5s ease;
+        background-color: rgba(0,0,0,.5);
+        .overlay-header {
+          @extend %subheader;
+        } 
+        .overlay-descr {
+          @extend %lightText;
+          @extend %smallText;
+        }
+        .overlay-btn-container {
+          .overlay-btn {
+            @extend %button;
+            }
+          }
+        }
+        &:hover { 
+          cursor: pointer;
+          .overlay {
+              opacity: 1;
+              z-index: 2;
+            }
+        }
+      }      
+    }
+   /* Arrow controls */
+   .paginator {
+    li {
+      position: absolute;
+      top: 40%;
+      display: block;
+      height: 58px;
+      width: 58px;
+      &:hover {
+        cursor: pointer;
+      }
+      &.prev {
+        left: 0;
+        background: url(../img/three/arrow-btn-left.png) no-repeat;
+      }
+      &.next {
+        right: 0;
+        background: url(../img/three/arrow-btn-right.png) no-repeat;
+      }
+    }
+   }
+ }       

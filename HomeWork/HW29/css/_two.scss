@@ -1,0 +1,33 @@
+.sect-two {
+	background-color: $white;
+	.sect-two-header {
+		color: $black;
+		@extend %boldText;
+		@extend %header;
+	}
+	.services {
+		.services-header {
+			@extend %boldText;
+			@extend %subheader;
+			color: $black;
+		}
+		.services-descr {
+			color: $grey;
+			@extend %smallText;
+		}
+	}
+	.services-web-design, .services-digital {
+		@extend %paddingColumnRight;
+	}
+	.services-web-app, .services-desktop-app {
+		@extend %paddingColumnLeft;
+	}
+	.price-btn-container {
+		padding-top: 5rem;
+		padding-bottom: 5.55rem;
+
+		.price-btn {
+			@extend %button;
+		}
+	}	
+}
