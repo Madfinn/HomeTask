@@ -26,5 +26,15 @@
 		.watch-more-btn {
 			@extend %button;
 		}
-	}	
+	}
+
+	@include xs {
+		.sect-four-descr {
+			padding-bottom: 3rem;
+		}
+		.btn-container {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
+	}		
 }

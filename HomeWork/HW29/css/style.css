@@ -28,7 +28,7 @@
 .sect-main .main-header, .sect-one .best-block .best-header .best-item, .sect-two .sect-two-header, .sect-two .services .services-header, .footer .footer-descr .footer-descr-bold {
   font-family: 'Proxima Nova Bd', sans-serif; }
 
-.sect-main .price-btn-container .price-btn, .sect-one .best-block .price-btn-container .price-btn, .sect-two .price-btn-container .price-btn, .sect-three .center .slick-slide .overlay .overlay-btn-container .overlay-btn, .sect-four .btn-container .watch-more-btn, .sect-main .header .nav .nav-item .nav-link {
+.sect-main .price-btn-container .price-btn, .sect-one .best-block .price-btn-container .price-btn, .sect-two .price-btn-container .price-btn, .sect-three .center .slick-slide .overlay .overlay-btn-container .overlay-btn, .sect-four .btn-container .watch-more-btn, .sect-main .header .menu-nav .nav-item .nav-link {
   font-family: 'Proxima Nova Rg', sans-serif; }
 
 .sect-main .main-descr, .sect-main .scroll-container .scroll-descr, .sect-one .best-block, .sect-three .center .slick-slide .overlay .overlay-descr, .footer .footer-descr {
@@ -43,10 +43,10 @@
 .sect-main .scroll-container .scroll-descr, .sect-two .services .services-descr, .sect-three .center .slick-slide .overlay .overlay-descr {
   font-size: 0.77rem; }
 
-.sect-one .best-design, .sect-two .services-web-design, .sect-two .services-digital {
+.sect-one .best-design {
   padding-right: 4.44rem; }
 
-.sect-one .best-code, .sect-two .services-web-app, .sect-two .services-desktop-app {
+.sect-one .best-code {
   padding-left: 4.44rem; }
 
 .sect-main .price-btn-container .price-btn, .sect-one .best-block .price-btn-container .price-btn, .sect-two .price-btn-container .price-btn, .sect-three .center .slick-slide .overlay .overlay-btn-container .overlay-btn, .sect-four .btn-container .watch-more-btn {
@@ -70,14 +70,17 @@ html {
 
 .sect-main {
   background-image: url(../img/main/main-bg.jpg);
-  background-size: cover;
-  /* @include */ }
-  .sect-main .header {
-    /* display: flex;
-    justify-content: space-between; */ }
-    .sect-main .header .nav .nav-item .nav-link {
+  background-size: cover; }
+  .sect-main .header .menu-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .sect-main .header .menu-nav .nav-item .nav-link {
       color: #000; }
-    .sect-main .header .nav .nav-item .contact {
+    .sect-main .header .menu-nav .nav-item .contact {
       border: 1px solid #000;
       border-radius: 1.4rem; }
   .sect-main .main-header {
@@ -96,6 +99,46 @@ html {
     color: #fff; }
     .sect-main .scroll-container .scroll-down:hover {
       text-decoration: none; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .sect-main .header {
+      text-align: center; }
+      .sect-main .header .menu-nav {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+  @media (min-width: 576px) and (max-width: 767px) {
+    .sect-main .header {
+      text-align: center; }
+      .sect-main .header .menu-nav {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+    .sect-main .main-header {
+      /* margin-top: 8rem; */ }
+    .sect-main .price-btn-container {
+      padding-bottom: 13.2rem; } }
+  @media (min-width: 320px) and (max-width: 575px) {
+    .sect-main .header {
+      text-align: center; }
+      .sect-main .header .menu-nav {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .sect-main .header .menu-nav .hamburger:focus {
+          outline-color: #000; }
+        .sect-main .header .menu-nav .nav {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+          .sect-main .header .menu-nav .nav .nav-item {
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center; }
+    .sect-main .main-header {
+      margin-top: 4rem; }
+    .sect-main .price-btn-container {
+      padding-bottom: 6.2rem; } }
 
 .sect-one {
   background-color: #fff; }
@@ -112,35 +155,116 @@ html {
   .sect-one .best-code {
     background: url(../img/one/right-bg.jpg) center center no-repeat;
     background-size: cover; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .sect-one .best-block {
+      padding-top: 6.3rem;
+      padding-bottom: 6.3rem;
+      text-align: center; }
+      .sect-one .best-block .price-btn-container {
+        padding-top: 2.2rem;
+        padding-bottom: 3.7rem; }
+    .sect-one .best-design {
+      padding-right: 15px;
+      padding-left: 15px; }
+    .sect-one .best-code {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 576px) and (max-width: 767px) {
+    .sect-one .best-block {
+      padding-top: 6.3rem;
+      padding-bottom: 3.3rem;
+      text-align: center; }
+      .sect-one .best-block .price-btn-container {
+        padding-top: 2.2rem;
+        padding-bottom: 3.7rem; }
+    .sect-one .best-design {
+      padding-right: 15px;
+      padding-left: 15px; }
+    .sect-one .best-code {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 320px) and (max-width: 575px) {
+    .sect-one .best-block {
+      padding-top: 3.3rem;
+      padding-bottom: 1.3rem;
+      text-align: center; }
+      .sect-one .best-block .price-btn-container {
+        padding-top: 2.2rem;
+        padding-bottom: 3.7rem; }
+    .sect-one .best-design {
+      padding-right: 15px;
+      padding-left: 15px; }
+    .sect-one .best-code {
+      padding-right: 15px;
+      padding-left: 15px; } }
 
 .sect-two {
   background-color: #fff; }
   .sect-two .sect-two-header {
     color: #000; }
+  .sect-two .services .services-img {
+    height: 125px; }
   .sect-two .services .services-header {
     color: #000; }
   .sect-two .services .services-descr {
     color: #a7acbc; }
+  .sect-two .services-web-design, .sect-two .services-digital {
+    padding-right: 15px; }
+  .sect-two .services-web-app, .sect-two .services-desktop-app {
+    padding-left: 15px; }
   .sect-two .price-btn-container {
     padding-top: 5rem;
     padding-bottom: 5.55rem; }
+  @media (min-width: 1200px) {
+    .sect-two .services-web-design, .sect-two .services-digital {
+      padding-right: 4.44rem; }
+    .sect-two .services-web-app, .sect-two .services-desktop-app {
+      padding-left: 4.44rem; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .sect-two .services {
+      text-align: center; } }
+  @media (min-width: 576px) and (max-width: 767px) {
+    .sect-two .price-btn-container {
+      padding-top: 3rem;
+      padding-bottom: 4.55rem; } }
+  @media (min-width: 320px) and (max-width: 575px) {
+    .sect-two .services {
+      text-align: center; }
+    .sect-two .price-btn-container {
+      padding-top: 3rem;
+      padding-bottom: 3.55rem; } }
 
 .sect-three {
   position: relative;
   /* Arrow controls */ }
-  .sect-three .center {
-    position: relative;
-    z-index: 0; }
+  .sect-three .center .slick-slide {
+    height: 310px; }
+    .sect-three .center .slick-slide .slide-img {
+      display: block; }
     .sect-three .center .slick-slide .overlay {
-      padding: 3.5rem 2.5rem;
-      margin-top: -335px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-top: 6em;
+      margin-top: -84%;
       width: 100%;
-      height: auto;
+      height: 100%;
       color: #fff;
       opacity: 0;
       -webkit-transition: opacity .5s ease;
       transition: opacity .5s ease;
-      background-color: rgba(0, 0, 0, 0.5); }
+      background-color: rgba(0, 0, 0, 0.5);
+      background-size: cover; }
     .sect-three .center .slick-slide:hover {
       cursor: pointer; }
       .sect-three .center .slick-slide:hover .overlay {
@@ -160,6 +284,12 @@ html {
     .sect-three .paginator li.next {
       right: 0;
       background: url(../img/three/arrow-btn-right.png) no-repeat; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .sect-three .center .slick-slide .overlay {
+      padding-top: 1em; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .sect-three .center .slick-slide .overlay {
+      padding-top: 1em; } }
 
 .sect-four {
   background: url(../img/four/bg.jpg) no-repeat;
@@ -179,6 +309,12 @@ html {
   .sect-four .btn-container {
     padding-top: 6rem;
     padding-bottom: 6rem; }
+  @media (min-width: 320px) and (max-width: 575px) {
+    .sect-four .sect-four-descr {
+      padding-bottom: 3rem; }
+    .sect-four .btn-container {
+      padding-top: 4rem;
+      padding-bottom: 4rem; } }
 
 .sect-five .google-map {
   width: 100%;

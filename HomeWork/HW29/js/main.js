@@ -7,7 +7,23 @@ $(document).ready(function(){
 	  slidesToShow: 3,
 	  slidesToScroll: 1,
 	  prevArrow: $('.prev'),
-	  nextArrow: $('.next')
+	  nextArrow: $('.next'),
+	  responsive: [
+	  	{
+	  		breakpoint: 800,
+	  		settings: {
+	  			slidesToShow: 2,
+	  			slidesToScroll: 1
+	  		} 
+	  	},
+	  	{
+	  		breakpoint: 600,
+	  			settings: {
+	  				slidesToShow: 1,
+	  				slidesToScroll: 1
+	  			}
+	  	}
+	  ]
 	});
 	$('.center').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 	  console.log('beforeChange', currentSlide, nextSlide);

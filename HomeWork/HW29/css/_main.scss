@@ -2,9 +2,9 @@
 	background-image: url(../img/main/main-bg.jpg);
 	background-size: cover;
 	.header {
-		/* display: flex;
-		justify-content: space-between; */
-		.nav {
+		.menu-nav {
+			display: flex;
+			justify-content: flex-end;
 			.nav-item {
 				.nav-link {
 					color: $black;
@@ -49,5 +49,52 @@
 			}
 		}
 	}
-	/* @include */
+	@include md {
+		.header {
+			text-align: center;
+			.menu-nav {
+				justify-content: center;
+			}		
+		}
+	}
+	@include sm{
+		.header {
+			text-align: center;
+			.menu-nav {
+				justify-content: center;
+			}		
+		}
+		.main-header {
+			/* margin-top: 8rem; */
+		}
+		.price-btn-container {
+			padding-bottom: 13.2rem;
+		}
+	}
+
+	@include xs {
+		.header {
+			text-align: center;
+			.menu-nav {
+				justify-content: center;
+				.hamburger {
+					&:focus{
+						outline-color: $black;
+					}
+				}
+				.nav {
+					flex-direction: column;
+					.nav-item {
+						align-items: center;
+					}
+				}
+			}
+		}
+	.main-header {
+			margin-top: 4rem;
+		}
+		.price-btn-container {
+			padding-bottom: 6.2rem;
+		}
+	}
 }
